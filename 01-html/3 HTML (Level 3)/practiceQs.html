@@ -8,7 +8,6 @@
 </head>
 
 <body>
-  <!--
   <table border=black>
     <caption>A test table with merged cells</caption>
 
@@ -81,7 +80,6 @@
     <button>submit</button>
   </form>
 
--->
 
   <table border=black>
     <h2>Qs1: Recreate the following table using HTML</h2>
@@ -119,6 +117,40 @@
       <td>4</td>
     </tr>
   </table>
+
+  <h2>Qs2: Recreate the following form</h2>
+  <form action="/action">
+    <label for="name">Name: </label>
+    <input type="text" id="name">
+    <br>
+
+    <label for="male">Male </label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="female">Female </label>
+    <input type="radio" name="gender" id="female" value="female">
+    <br>
+
+    <select name="country" id="country">
+      <option>Select an option</option>
+      <option value="India">India</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="China">China</option>
+    </select>
+    <br>
+
+    <label for="message">Message:</label>
+    <br>
+    <textarea name="message" id="message"></textarea>
+
+    <br>
+    <label for="subs">Subscribe?</label>
+    <input type="checkbox" name="subs" id="subs">
+    <br>
+
+    <button>Submit</button>
+
+  </form>
+
 </body>
 
 </html>
