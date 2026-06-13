@@ -1,0 +1,29 @@
+What is CSS?
+
+CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a document written in a markup language like HTML. In simple terms, CSS is what makes websites look good.
+
+Key Concepts:
+
+1.  **Separation of Concerns**: CSS allows you to separate the presentation of a website from its structure (which is handled by HTML). This makes the code cleaner, easier to maintain, and more flexible.
+
+2.  **Cascading**: The "Cascading" part means that styles can be inherited from parent elements and that multiple style rules can be applied to the same element. There's a set of rules to determine which style has priority if there are conflicts.
+
+3.  **How it Works**: CSS works by using selectors to target HTML elements and then applying a set of rules (properties and values) to them.
+
+    For example:
+    p {
+      color: blue;
+      font-size: 16px;
+    }
+
+    In this example:
+    - `p` is the selector (it targets all `<p>` elements).
+    - `color` and `font-size` are properties.
+    - `blue` and `16px` are the values for those properties.
+
+4.  **Ways to use CSS**:
+    - **Inline CSS**: Styles are applied directly to an HTML element using the `style` attribute. This is generally not recommended for large-scale styling.
+    - **Internal CSS**: Styles are placed within a `<style>` tag in the `<head>` section of an HTML document. This is useful for single-page styling.
+    - **External CSS**: Styles are defined in a separate `.css` file, which is then linked to the HTML document using a `<link>` tag. This is the most common and recommended method for styling websites, as it allows you to style multiple pages from a single file.
+
+In summary, if HTML is the skeleton of a webpage, CSS is the clothing, makeup, and overall appearance that gives it style and personality.
