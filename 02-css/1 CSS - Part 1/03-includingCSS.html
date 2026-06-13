@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Including CSS</title>
+</head>
+
+<body>
+  <!--=========----Inline Style----============-->
+  <h1 style="color: blue; text-align: center;">This is a heading with Inline CSS</h1>
+
+  <p style="font-size: 18px; color: green;">
+    This paragraph has inline styles applied. The text color is green and the font size is 18px.
+  </p>
+
+  <div style="background-color: lightgray; border: 1px solid black; padding: 10px;">
+    <p style="margin: 0;">This is a div with a light gray background, padding, and a border. The paragraph inside has
+      its margin removed.</p>
+  </div>
+
+  <h2>How Inline CSS Works</h2>
+  <p>
+    Inline CSS uses the <code>style</code> attribute directly within an HTML tag. Each style declaration is a
+    property-value pair, separated by a colon, and multiple declarations are separated by semicolons.
+  </p>
+  <p>
+    <strong>Example:</strong> <code>&lt;p style="color: red; font-size: 14px;"&gt;...&lt;/p&gt;</code>
+  </p>
+
+  <h2>Pros and Cons of Inline CSS</h2>
+  <h3>Pros:</h3>
+  <ul>
+    <li>Quick for testing or applying a very specific style to a single element.</li>
+    <li>Has the highest specificity, so it will override styles from internal or external stylesheets.</li>
+  </ul>
+  <h3>Cons:</h3>
+  <ul>
+    <li><strong>Bad Practice for Maintenance:</strong> It mixes content (HTML) with presentation (CSS), making the code
+      harder to read and maintain.</li>
+    <li><strong>Not Reusable:</strong> You have to repeat the styles for every element you want to style the same way.
+    </li>
+    <li><strong>No Caching:</strong> Unlike external stylesheets, inline styles are not cached by the browser.</li>
+  </ul>
+
+</body>
+
+</html>
