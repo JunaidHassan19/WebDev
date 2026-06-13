@@ -1,0 +1,64 @@
+**Basic CSS Format (Syntax)**
+
+The fundamental structure of a CSS rule consists of two main parts: a **selector** and a **declaration block**.
+
+```css
+selector {
+  property: value;
+}
+```
+
+Let's break it down:
+
+1.  **Selector**:
+    *   The selector is the part of the CSS rule that "selects" the HTML element(s) you want to style.
+    *   It can be a simple element name (like `p`, `h1`, `div`), a class (like `.my-class`), an ID (like `#my-id`), or more complex patterns.
+
+2.  **Declaration Block**:
+    *   This block is enclosed in curly braces `{}`.
+    *   It contains one or more declarations, separated by semicolons `;`.
+
+3.  **Declaration**:
+    *   A declaration is a single rule that specifies a style. It's made up of a **property** and a **value**.
+    *   **Property**: This is the style attribute you want to change (e.g., `color`, `font-size`, `background-color`).
+    *   **Value**: This is the value you assign to the property (e.g., `blue`, `16px`, `#ffffff`).
+    *   The property and value are separated by a colon `:`.
+
+**Example:**
+
+Let's style all paragraph (`<p>`) elements to have blue text and a font size of 16 pixels.
+
+```css
+p {
+  color: blue;
+  font-size: 16px;
+}
+```
+
+In this example:
+- `p` is the **selector**.
+- `{ color: blue; font-size: 16px; }` is the **declaration block**.
+- `color: blue;` is the first **declaration**.
+- `font-size: 16px;` is the second **declaration**.
+
+**Key Points to Remember:**
+- Each declaration inside a declaration block must be separated by a semicolon.
+- The last declaration in a block doesn't strictly need a semicolon, but it's a best practice to include it to prevent errors when adding more declarations later.
+- You can group selectors to apply the same styles to multiple elements.
+
+**Grouping Selectors Example:**
+To make all `h1`, `h2`, and `h3` elements green, you can group them with commas:
+
+```css
+h1, h2, h3 {
+  color: green;
+}
+```
+
+---
+
+### MDN CSS Reference
+
+For a complete and authoritative guide to all CSS properties and concepts, the MDN Web Docs is the best resource.
+
+**Link**: [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
