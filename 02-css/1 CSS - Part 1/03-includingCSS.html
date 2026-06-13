@@ -5,6 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Including CSS</title>
+  <!--=========----Internal CSS (Style Tag)----============-->
+  <style>
+    /* These styles will apply to the elements in the "Internal CSS" section below */
+    .internal-h2 {
+      color: darkred;
+      border-bottom: 2px solid darkred;
+    }
+
+    .internal-p {
+      color: #fcf9f9;
+      line-height: 1.6;
+      background-color: rgb(98, 108, 105);
+    }
+
+    #internal-example {
+      background-color: #62b9f7;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+
+    }
+  </style>
 </head>
 
 <body>
@@ -42,6 +65,45 @@
     <li><strong>Not Reusable:</strong> You have to repeat the styles for every element you want to style the same way.
     </li>
     <li><strong>No Caching:</strong> Unlike external stylesheets, inline styles are not cached by the browser.</li>
+  </ul>
+
+  <hr>
+
+  <!--=========----Internal CSS (Style Tag)----============-->
+  <div id="internal-example">
+    <h2 class="internal-h2">This heading is styled by Internal CSS</h2>
+    <p class="internal-p">
+      This paragraph and its heading are styled by the CSS rules located in the <code>&lt;style&gt;</code> tag in the
+      document's <code>&lt;head&gt;</code>.
+    </p>
+  </div>
+
+  <h2 class="internal-h2">How Internal CSS Works</h2>
+  <p class="internal-p">
+    Internal CSS is defined within a <code>&lt;style&gt;</code> tag, which is typically placed in the
+    <code>&lt;head&gt;</code> section of the HTML document. This allows you to write CSS rules that apply to the entire
+    page.
+  </p>
+  <p class="internal-p">
+    <strong>Example (in head):</strong> <code>&lt;style&gt; p { color: green; } &lt;/style&gt;</code>
+  </p>
+
+  <h2 class="internal-h2">Pros and Cons of Internal CSS</h2>
+  <h3>Pros:</h3>
+  <ul>
+    <li><strong>Single-File Styling:</strong> Styles are contained within the HTML file, which can be convenient for
+      single-page websites or components.</li>
+    <li><strong>Affects the Whole Page:</strong> It can style any element on the page, unlike inline CSS which only
+      affects one element.</li>
+    <li><strong>No Extra HTTP Request:</strong> Since the styles are in the HTML file, the browser doesn't need to make
+      an extra request to fetch a stylesheet.</li>
+  </ul>
+  <h3>Cons:</h3>
+  <ul>
+    <li><strong>Not for Multi-Page Sites:</strong> If you want to use the same styles across multiple pages, you would
+      have to copy the style block to every page, which is inefficient.</li>
+    <li><strong>Page Load Speed:</strong> It increases the size of the HTML file, which can slightly increase page load
+      time compared to a cached external stylesheet.</li>
   </ul>
 
 </body>
