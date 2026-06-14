@@ -1,0 +1,69 @@
+/* General Styles */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdfdfd;
+  color: #444;
+  line-height: 1.7;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+h1,
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 40px;
+}
+
+section {
+  margin-bottom: 30px;
+  border-left: 3px solid #bdc3c7;
+  padding-left: 20px;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+/* Text Align Properties */
+
+/* text-align: left */
+.align-left {
+  text-align: left;
+}
+
+/* text-align: center */
+.align-center {
+  text-align: center;
+}
+
+/* text-align: right */
+.align-right {
+  text-align: right;
+}
+
+/* text-align: justify */
+.align-justify {
+  text-align: justify;
+}
