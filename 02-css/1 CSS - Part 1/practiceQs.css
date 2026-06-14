@@ -1,5 +1,14 @@
 h1 {
   color: orange;
+  text-align: center;
+  text-decoration: rgb(0, 195, 255) double underline;
+  font-family: league spartan;
+
+  /* text-size: 55px; */
+  font-weight: 900;
+  line-height: 1.5;
+
+
 }
 
 p {
