@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Font Family</title>
+  <link rel="stylesheet" href="11-styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>The CSS <code>font-family</code> Property</h1>
+    <p>This property specifies a prioritized list of one or more font family names and/or generic family names for an
+      element.</p>
+
+    <section>
+      <h2>Font Stacks and Fallbacks</h2>
+      <p>You should always provide a "font stack" — a list of fonts for the browser to try. It will use the first font
+        in the list that is available on the user's system. Always end the list with a generic family name as a final
+        fallback.</p>
+      <div class="example-box">
+        <code>font-family: "Helvetica Neue", Arial, sans-serif;</code>
+      </div>
+    </section>
+
+    <section>
+      <h2>1. Serif Fonts</h2>
+      <p>Serif fonts have small strokes (called serifs) attached to the main part of the letters. They are often used
+        for body text in print and can convey a sense of tradition and elegance.</p>
+      <div class="example-box">
+        <p class="font-serif">This text is in a serif font (Georgia). It's often considered easy to read in long-form
+          text.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Sans-Serif Fonts</h2>
+      <p>"Sans" literally means "without". Sans-serif fonts do not have serifs. They are known for their clean, modern,
+        and minimalist appearance, making them popular for web design, especially for headings and UI elements.</p>
+      <div class="example-box">
+        <p class="font-sans-serif">This text is in a sans-serif font (Verdana). It looks clean and modern on screens.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Monospace Fonts</h2>
+      <p>In a monospace font, every character occupies the exact same amount of horizontal space. This is ideal for
+        displaying code, as it aligns characters vertically.</p>
+      <div class="example-box">
+        <p class="font-monospace">This text is in a monospace font (Courier New).<br>
+          <code>if (user) { console.log('Hello'); }</code>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Generic Font Families</h2>
+      <p>It's crucial to end your font stack with one of these generic keywords to let the browser pick a suitable font
+        if none of your specified fonts are available.</p>
+      <ul>
+        <li><code>serif</code> - e.g., Times New Roman, Georgia</li>
+        <li><code>sans-serif</code> - e.g., Arial, Helvetica, Verdana</li>
+        <li><code>monospace</code> - e.g., Courier New, Lucida Console</li>
+        <li><code>cursive</code> - Fonts that emulate handwriting. e.g., Brush Script MT</li>
+        <li><code>fantasy</code> - Decorative, playful fonts. e.g., Papyrus</li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+
+</html>

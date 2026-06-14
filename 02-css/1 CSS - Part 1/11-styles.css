@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  /* Default fallback */
+  background-color: #f4f7f6;
+  color: #3d3d3d;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+  color: #1a1a1a;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin-top: 30px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+.example-box {
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-size: 1.1em;
+}
+
+code {
+  background-color: #eef;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Font Family Examples */
+
+.font-serif {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-sans-serif {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.font-monospace {
+  font-family: 'Courier New', Courier, monospace;
+}
