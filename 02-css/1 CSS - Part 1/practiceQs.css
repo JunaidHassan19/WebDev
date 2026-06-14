@@ -3,11 +3,10 @@ h1 {
   text-align: center;
   text-decoration: rgb(0, 195, 255) double underline;
   font-family: league spartan;
-
-  /* text-size: 55px; */
+  font-size: 55px;
   font-weight: 900;
   line-height: 1.5;
-
+  text-transform: uppercase;
 
 }
 
