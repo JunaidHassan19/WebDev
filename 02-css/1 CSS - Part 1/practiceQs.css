@@ -1,4 +1,4 @@
-h1 {
+/* h1 {
   color: orange;
   text-align: center;
   text-decoration: rgb(0, 195, 255) double underline;
@@ -18,4 +18,41 @@ p {
 button {
   background-color: blue;
   color: white;
+} */
+
+p {
+  color: brown;
+  line-height: 30px;
+  text-align: center;
+
+
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  font-family: Georgia;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+button {
+  color: blueviolet;
+  background-color: white;
+}
+
+textarea {
+  color: black;
+}
+
+span {
+  text-decoration: underline;
 }
