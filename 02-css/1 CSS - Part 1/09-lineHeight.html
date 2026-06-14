@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Line Height & Letter Spacing</title>
+  <link rel="stylesheet" href="09-style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>CSS Text Spacing</h1>
+    <p>This page demonstrates the <code>line-height</code> and <code>letter-spacing</code> properties, which are crucial
+      for readability.</p>
+
+    <!-- Line Height -->
+    <section>
+      <h2>The <code>line-height</code> Property</h2>
+      <p>This property sets the distance between lines of text. It is the "leading" in typography.</p>
+
+      <div class="example-box">
+        <h3>Examples:</h3>
+        <p class="lh-normal">
+          <strong>Normal (default):</strong> This is the browser's default line height. It's usually around 1.2. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua.
+        </p>
+        <p class="lh-numeric">
+          <strong>Numeric (1.6):</strong> Using a unitless value is the recommended approach. It's relative to the
+          element's font size. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.
+        </p>
+        <p class="lh-pixels">
+          <strong>Pixels (25px):</strong> You can use a fixed pixel value, but this is less flexible if the font size
+          changes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua.
+        </p>
+      </div>
+    </section>
+
+    <!-- Letter Spacing -->
+    <section>
+      <h2>The <code>letter-spacing</code> Property</h2>
+      <p>This property controls the space between characters in a text.</p>
+
+      <div class="example-box">
+        <h3>Examples:</h3>
+        <p class="ls-normal"><strong>Normal:</strong> This is the default letter spacing.</p>
+        <p class="ls-wide"><strong>Wide (3px):</strong> This increases the space between letters, which can be used for
+          stylistic headings.</p>
+        <p class="ls-tight"><strong>Tight (-1px):</strong> This reduces the space between letters, creating a more
+          condensed look.</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>
