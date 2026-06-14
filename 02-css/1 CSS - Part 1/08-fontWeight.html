@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Font Weight & Text Decoration</title>
+  <link rel="stylesheet" href="08-styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>CSS Font Properties</h1>
+    <p>This page demonstrates the <code>font-weight</code> and <code>text-decoration</code> properties.</p>
+
+    <!-- Font Weight -->
+    <section>
+      <h2>The <code>font-weight</code> Property</h2>
+      <p>This property sets how thick or thin characters in a text should be displayed.</p>
+
+      <div class="example-box">
+        <p class="fw-normal"><strong>Normal (400):</strong> This is the default font weight. Lorem ipsum dolor sit amet.
+        </p>
+        <p class="fw-bold"><strong>Bold (700):</strong> This is the standard bold font weight. Lorem ipsum dolor sit
+          amet.</p>
+        <p class="fw-light"><strong>Lighter (e.g., 300):</strong> A lighter weight than normal. (Requires font support)
+        </p>
+        <p class="fw-heavy"><strong>Heavier (e.g., 900):</strong> A very heavy, or "black", font weight. (Requires font
+          support)</p>
+      </div>
+    </section>
+
+    <!-- Text Decoration -->
+    <section>
+      <h2>The <code>text-decoration</code> Property</h2>
+      <p>This property is used to set or remove decorations from text. It's a shorthand for several properties.</p>
+
+      <div class="example-box">
+        <p class="td-none"><strong>None:</strong> No decoration. <a href="#">This link has its underline removed.</a>
+        </p>
+        <p class="td-underline"><strong>Underline:</strong> A line is drawn underneath the text.</p>
+        <p class="td-overline"><strong>Overline:</strong> A line is drawn above the text.</p>
+        <p class="td-line-through"><strong>Line-through:</strong> A line is drawn through the middle of the text.</p>
+        <p class="td-wavy-underline"><strong>Combined:</strong> You can combine styles, like a <span
+            class="special-decoration">wavy red underline</span>.</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>
