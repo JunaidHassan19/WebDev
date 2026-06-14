@@ -1,0 +1,25 @@
+/* Styles for the External CSS Example */
+
+.external-h2 {
+  color: #006400;
+  /* DarkGreen */
+  font-style: italic;
+}
+
+.external-p {
+  color: #333;
+  background-color: #f0fff0;
+  /* Honeydew */
+  border: 1px dashed #2e8b57;
+  /* SeaGreen */
+  padding: 10px;
+}
+
+#external-example {
+  background-color: #f5f5f5;
+  /* WhiteSmoke */
+  border: 1px solid #d3d3d3;
+  /* LightGray */
+  padding: 20px;
+  margin-top: 20px;
+}

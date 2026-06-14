@@ -28,6 +28,9 @@
 
     }
   </style>
+
+  <!--=========----External CSS----============-->
+  <link rel="stylesheet" href="03-includingCSS.css">
 </head>
 
 <body>
@@ -104,6 +107,42 @@
       have to copy the style block to every page, which is inefficient.</li>
     <li><strong>Page Load Speed:</strong> It increases the size of the HTML file, which can slightly increase page load
       time compared to a cached external stylesheet.</li>
+  </ul>
+
+  <hr>
+
+  <!--=========----External CSS----============-->
+  <div id="external-example">
+    <h2 class="external-h2">This heading is styled by an External CSS file</h2>
+    <p class="external-p">
+      This section is styled by rules from <code>includingCSS.css</code>, which is linked in the
+      <code>&lt;head&gt;</code> of this document.
+    </p>
+  </div>
+
+  <h2 class="external-h2">How External CSS Works</h2>
+  <p class="external-p">
+    An external stylesheet is a separate <code>.css</code> file that contains all your CSS rules. You link this file to
+    your HTML document using a <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> section.
+  </p>
+  <p class="external-p">
+    <strong>Example (in head):</strong> <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+  </p>
+
+  <h2 class="external-h2">Pros and Cons of External CSS</h2>
+  <h3>Pros:</h3>
+  <ul>
+    <li><strong>Best for Multi-Page Sites:</strong> You can use one <code>.css</code> file to style an entire website,
+      making maintenance and updates much easier.</li>
+    <li><strong>Cleaner Code:</strong> It keeps your HTML and CSS separate, which is a fundamental principle of good web
+      design (separation of concerns).</li>
+    <li><strong>Browser Caching:</strong> Once the <code>.css</code> file is downloaded, the browser will cache it,
+      leading to faster load times on subsequent page visits.</li>
+  </ul>
+  <h3>Cons:</h3>
+  <ul>
+    <li><strong>Extra HTTP Request:</strong> The browser has to make an additional request to download the stylesheet,
+      which can slightly increase the initial page load time for the very first visit.</li>
   </ul>
 
 </body>
