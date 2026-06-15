@@ -11,7 +11,8 @@ h3 {
 
 /*-------Id Selector------------*/
 #login {
-  color: white;
+  background-color: white;
+
 }
 
 #signup {
@@ -23,4 +24,15 @@ h3 {
 .upvote {
   background-color: green;
   color: white;
+}
+
+/*-----Descendant Selector-----*/
+p a {
+  color: purple;
+  text-decoration: none;
+  background-color: yellow;
+}
+
+nav ul li a {
+  color: palevioletred;
 }
