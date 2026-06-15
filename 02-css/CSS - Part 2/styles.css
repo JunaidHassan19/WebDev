@@ -18,3 +18,9 @@ h3 {
   background-color: #b92b27;
   color: white;
 }
+
+/**------Class Selector---------*/
+.upvote {
+  background-color: green;
+  color: white;
+}
