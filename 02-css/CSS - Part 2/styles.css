@@ -8,3 +8,13 @@ h1,
 h3 {
   color: #b92b27;
 }
+
+/*-------Id Selector------------*/
+#login {
+  color: white;
+}
+
+#signup {
+  background-color: #b92b27;
+  color: white;
+}
