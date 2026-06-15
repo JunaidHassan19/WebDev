@@ -36,3 +36,13 @@ p a {
 nav ul li a {
   color: palevioletred;
 }
+
+/*------Adjacent Sibling Selector-----*/
+p+h3 {
+  text-decoration: underline;
+}
+
+.upvote+button {
+  background-color: #1877f2;
+  color: white;
+}
