@@ -46,3 +46,9 @@ p+h3 {
   background-color: #1877f2;
   color: white;
 }
+
+/*---------Child Combinator---------*/
+div>input {
+  background-color: darkcyan;
+  color: white;
+}
