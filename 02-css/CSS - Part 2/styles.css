@@ -49,6 +49,15 @@ p+h3 {
 
 /*---------Child Combinator---------*/
 div>input {
-  background-color: darkcyan;
+  background-color: rgb(243, 232, 84);
   color: white;
+}
+
+/*--------Attribute Selector---------*/
+input[type="text"] {
+  color: red;
+}
+
+input[type="password"] {
+  color: green;
 }
