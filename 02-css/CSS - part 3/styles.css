@@ -9,6 +9,7 @@ div {
   border-left: 2px dashed rgb(0, 0, 0);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  padding-top: 20px;
 }
 
 h1 {
@@ -17,4 +18,15 @@ h1 {
   border-color: rgb(2, 106, 40); */
   border: 2px dashed rgb(2, 106, 40);
   border-radius: 10px;
+}
+
+button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  /* padding: 10px; */
+  /* padding: 10px 20px; */
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
