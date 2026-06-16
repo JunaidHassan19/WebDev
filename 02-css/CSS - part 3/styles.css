@@ -7,6 +7,8 @@ div {
   border-color: rgb(0, 0, 0); */
   border: 2px solid rgb(16, 224, 9);
   border-left: 2px dashed rgb(0, 0, 0);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 h1 {
@@ -14,4 +16,5 @@ h1 {
   border-style: dashed;
   border-color: rgb(2, 106, 40); */
   border: 2px dashed rgb(2, 106, 40);
+  border-radius: 10px;
 }
