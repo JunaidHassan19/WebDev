@@ -61,3 +61,30 @@ input[type="text"] {
 input[type="password"] {
   color: green;
 }
+
+/*--------Sudo Selectors---------*/
+h3:hover {
+  color: #1877f2;
+  cursor: pointer;
+  text-decoration: red wavy underline;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+button:active {
+  background-color: darkgray;
+  color: black;
+}
+
+p:active {
+  color: red;
+  font-weight: bold;
+}
+
+input[type="radio"]:checked+label {
+  color: green;
+  font-weight: bold;
+}
