@@ -95,3 +95,15 @@ div:nth-of-type(2n) {
   padding: 10px;
   margin-top: 10px;
 }
+
+/*------Pseudo-elements-----*/
+h1::first-letter {
+  color: red;
+  font-size: 2em;
+}
+
+p::selection {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
