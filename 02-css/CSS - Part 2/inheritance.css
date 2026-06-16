@@ -1,0 +1,19 @@
+div {
+  background-color: lightblue;
+  color: #333;
+}
+
+form {
+  background-color: #f9f;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  background-color: inherit;
+}
+
+button {
+  background-color: inherit;
+}
