@@ -9,7 +9,9 @@ div {
   border-left: 2px dashed rgb(0, 0, 0);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  padding-top: 20px;
+  padding: 20px 10px;
+  /* margin: 20px; */
+  margin: 20px 10px;
 }
 
 h1 {
