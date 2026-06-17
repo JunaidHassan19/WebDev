@@ -47,3 +47,20 @@ button {
   padding-left: 1em;
   padding-right: 1em;
 }
+
+/* section {
+  font-size: 10px;
+}
+
+.div {
+  font-size: 2em;
+} */
+
+/*-------Rem Units-------*/
+section {
+  font-size: 15px;
+}
+
+.div {
+  font-size: 2rem;
+}
