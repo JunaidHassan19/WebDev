@@ -1,0 +1,20 @@
+/*--------Percentage Units--------*/
+h1 {
+  border: 2px solid #030303;
+  width: 50%;
+}
+
+#outer {
+  height: 200px;
+  width: 200px;
+  background-color: #6cebc1;
+  border: 2px solid #030303;
+}
+
+#inner {
+  height: 50%;
+  width: 50%;
+  background-color: #f4a261;
+  border: 2px solid #030303;
+  margin: 10%;
+}
