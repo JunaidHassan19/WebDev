@@ -7,7 +7,7 @@ div {
   height: 50px;
   text-align: center;
   background-color: #83e086;
-  margin: 10px;
+  margin: 10px auto;
   border: 2px solid black;
 }
 
@@ -32,4 +32,6 @@ div:nth-of-type(3n) {
 }
 
 /*----Translate----*/
-#three {}
+#three {
+  transform: translate(50px, 20px);
+}
