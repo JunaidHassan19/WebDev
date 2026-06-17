@@ -1,0 +1,25 @@
+section {
+  margin-top: 100px;
+}
+
+div {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: #83e086;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+div:nth-of-type(2n) {
+  background-color: #6e9fc7;
+}
+
+div:nth-of-type(3n) {
+  background-color: #ed5f55;
+}
+
+/*----Rotate----*/
+#one {
+  transform: rotate(45deg);
+}
