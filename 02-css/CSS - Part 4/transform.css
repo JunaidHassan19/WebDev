@@ -23,3 +23,9 @@ div:nth-of-type(3n) {
 #one {
   transform: rotate(45deg);
 }
+
+/*----Scale----*/
+#two {
+  transform: scale(0.5);
+
+}
