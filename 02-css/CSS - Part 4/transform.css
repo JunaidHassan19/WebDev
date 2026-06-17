@@ -35,3 +35,13 @@ div:nth-of-type(3n) {
 #three {
   transform: translate(50px, 20px);
 }
+
+/*----Skew----*/
+#four {
+  transform: skew(20deg, 10deg);
+}
+
+/*----mixed transformations----*/
+#five {
+  transform: rotate(30deg) scale(1.2) translate(20px, 10px);
+}
