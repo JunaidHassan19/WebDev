@@ -1,0 +1,16 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* transition: 1s; */
+  margin: 0 auto;
+  margin-top: 10px;
+  transition: margin-top ease-out 1s;
+}
+
+div:hover {
+  /* background-color: blue;
+  border-radius: 50%; */
+  margin-top: 400px;
+  background-color: blue;
+}
