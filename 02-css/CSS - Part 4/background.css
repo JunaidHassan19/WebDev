@@ -1,0 +1,9 @@
+div {
+  width: 500px;
+  height: 300px;
+  background-color: rgb(64, 157, 234);
+  margin: 20px auto;
+  background-image: url('./images/cat.jpg');
+  /* background-size: contain; */
+  background-size: cover;
+}
