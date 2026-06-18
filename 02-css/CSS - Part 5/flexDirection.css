@@ -1,0 +1,25 @@
+#container {
+  height: 300px;
+  width: 80%;
+  background-color: #b8daf0;
+  margin: 10px auto;
+  border: 2px solid #333;
+  display: flex;
+  /*---column-reverse: elements are stacked vertically in reverse order ---*/
+  /* flex-direction: column-reverse; */
+  /*---row-reverse: elements are stacked horizontally in reverse order ---*/
+  flex-direction: row-reverse;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+#container div {
+  height: 100px;
+  width: 300px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  text-align: center;
+}
