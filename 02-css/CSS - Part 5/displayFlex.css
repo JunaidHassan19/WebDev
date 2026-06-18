@@ -1,0 +1,40 @@
+#container {
+  height: 300px;
+  width: 80%;
+  background-color: #b8daf0;
+  margin: 10px auto;
+  border: 2px solid #333;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+#container div {
+  height: 100px;
+  width: 300px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/*--------- 2nd Container -------------*/
+#container2 {
+  height: 250px;
+  width: 80%;
+  background-color: #b8daf0;
+  margin: 10px auto;
+  border: 2px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+
+#container2 div {
+  height: 100px;
+  width: 300px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  text-align: center;
+}
