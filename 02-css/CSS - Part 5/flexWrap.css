@@ -1,0 +1,29 @@
+#container {
+  height: 400px;
+  width: 80%;
+  background-color: #b8daf0;
+  margin: 10px auto;
+  border: 2px solid #333;
+  display: flex;
+  /*----no wrap makes elements stay in a single row ---*/
+  /* flex-wrap: nowrap; */
+
+  /*----wrap makes elements wrap to the next row ---*/
+  /* flex-wrap: wrap; */
+
+  /*----wrap-reverse makes elements wrap to the next row in reverse order ---*/
+  flex-wrap: wrap-reverse;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+#container div {
+  height: 100px;
+  width: 300px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  text-align: center;
+}
