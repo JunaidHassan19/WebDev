@@ -18,13 +18,17 @@
   /* flex-grow: 3;
   min-width: 100px;
   max-width: 400px; */
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
+
+  /*------Flex Shorthand------*/
+  flex: 1 1 100px;
 }
 
 #indigo {
   /* flex-basis: 100px; */
   /* flex-grow: 1; */
-  flex-shrink: 3;
+  /* flex-shrink: 3; */
+  flex: 1 1 100px;
 }
 
 h1 {
