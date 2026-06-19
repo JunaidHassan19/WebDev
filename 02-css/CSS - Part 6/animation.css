@@ -2,7 +2,7 @@
   height: 100px;
   width: 300px;
   background-color: #646ffc;
-
+  /*
   animation-name: fontAnimation;
   animation-duration: 2s;
   animation-timing-function: ease-in;
@@ -23,6 +23,11 @@
   animation-delay: 0;
   animation-iteration-count: 10;
   animation-direction: normal;
+  */
+
+  /*-----Shorthand-----*/
+  animation: boxSize 2s ease-in 0s 10 normal;
+  animation: bgAnimation 2s ease-in 0s 10 normal;
 }
 
 @keyframes fontAnimation {
