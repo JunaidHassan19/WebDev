@@ -1,0 +1,35 @@
+.container {
+  height: 300px;
+  width: 600px;
+  background-color: rgb(176, 243, 76);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 10px;
+  /* justify-items: end; */
+  /* justify-items: center; */
+  /* align-items: start; */
+  /* align-items: center; */
+  /* align-items: end; */
+
+  place-items: center;
+}
+
+.item {
+  height: 50px;
+  width: 100px;
+  background-color: aqua;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.one {
+  /* justify-self: end;
+  align-self: start; */
+
+  place-self: end;
+}
+
+/*
+Note: CSS grid is block element if we need to make it inline element then we can use display: inline-grid; property. By default it is display: grid; which is block element.
+*/
