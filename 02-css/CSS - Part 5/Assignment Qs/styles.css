@@ -1,0 +1,39 @@
+.container {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(213, 230, 245);
+  border: 2px solid rgb(4, 159, 58);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container div {
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.navbar {
+  height: 50px;
+  width: 900px;
+  background-color: pink;
+  border: 2px solid green;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar div {
+  margin-right: 50px;
+  font-size: 24px;
+}
