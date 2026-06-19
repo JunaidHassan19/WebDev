@@ -26,8 +26,9 @@
   */
 
   /*-----Shorthand-----*/
-  animation: boxSize 2s ease-in 0s 10 normal;
-  animation: bgAnimation 2s ease-in 0s 10 normal;
+  /* animation: boxSize 2s ease-in 0s 10 normal; */
+  /* animation: bgAnimation 2s ease-in 0s 10 normal; */
+  animation: colorChange 5s linear 0s infinite normal;
 }
 
 @keyframes fontAnimation {
@@ -57,5 +58,28 @@
 
   to {
     width: 500px;
+  }
+}
+
+/*------% in Animations------*/
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+
+  25% {
+    background-color: green;
+  }
+
+  50% {
+    background-color: yellow;
+  }
+
+  75% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: blue;
   }
 }
