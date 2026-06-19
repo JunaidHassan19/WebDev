@@ -1,0 +1,40 @@
+#container {
+  height: 400px;
+  width: 80%;
+  background-color: #b8daf0;
+  margin: 10px auto;
+  border: 2px solid #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  /*---flex start makes items align to the start of the cross axis-----*/
+  /* align-content: flex-start; */
+
+  /*-----flex end makes items align to the end of the cross axis-----*/
+  /* align-content: flex-end; */
+
+  /*-----center makes items align to the center of the cross axis-----*/
+  /* align-content: center; */
+
+  /*-------space-between makes items align with equal space between them-----*/
+  /* align-content: space-between; */
+
+  /*-------space-around makes items align with equal space around them-----*/
+  /* align-content: space-around; */
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+#container div {
+  height: 50px;
+  width: 300px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  text-align: center;
+}
