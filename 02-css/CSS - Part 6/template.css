@@ -3,8 +3,10 @@
   width: 600px;
   background-color: rgb(176, 243, 76);
   display: grid;
-  grid-template-rows: 50px 50px 50px 50px 50px;
-  grid-template-columns: 200px 200px 200px;
+  /* grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-template-columns: 200px 200px 200px; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .item {
