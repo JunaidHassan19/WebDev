@@ -41,3 +41,35 @@
   grid-column: 1 / 12;
 
 }
+
+@media (max-width: 720px) {
+  .header {
+    grid-column: 1 / 12;
+  }
+
+  .navigation {
+    grid-column: 1 / 12;
+    grid-row: 2;
+  }
+
+  .sidebar {
+    grid-column: 1 / 4;
+    grid-row: 3 / 11;
+  }
+
+  .main {
+    grid-column: 4 / 12;
+    grid-row: 3 / 11;
+  }
+
+  .ads {
+    grid-column: 1/ 4;
+    grid-row: 11;
+  }
+
+  .footer {
+    grid-column: 4/12;
+    grid-row: 11;
+  }
+
+}
