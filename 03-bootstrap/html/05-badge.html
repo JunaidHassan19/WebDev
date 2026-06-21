@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Badge Components</h1>
+    <p>Here are some examples of Bootstrap badges:</p>
+    <span class="badge bg-primary">Primary</span>
+    <span class="badge bg-secondary">Secondary</span>
+    <span class="badge bg-success">Success</span>
+    <span class="badge bg-danger">Danger</span>
+    <span class="badge bg-warning">Warning</span>
+    <span class="badge bg-info">Info</span>
+    <span class="badge bg-light">Light</span>
+    <span class="badge bg-dark">Dark</span>
+    <hr>
+
+    <p>Badges with different heading levels:</p>
+    <h1>Heading 1 <span class="badge bg-primary">Primary</span></h1>
+    <h2>Heading 2 <span class="badge bg-secondary">Secondary</span></h2>
+    <h3>Heading 3 <span class="badge bg-success">Success</span></h3>
+    <h4>Heading 4 <span class="badge bg-danger">Danger</span></h4>
+    <h5>Heading 5 <span class="badge bg-warning">Warning</span></h5>
+    <h6>Heading 6 <span class="badge bg-info">Info</span></h6>
+    <hr>
+
+    <p>Badges with different button styles:</p>
+    <button class="btn btn-primary">
+      Primary <span class="badge bg-danger">4</span>
+    </button>
+
+    <button class="btn btn-secondary">
+      Secondary <span class="badge bg-dark">4</span>
+    </button>
+    <hr>
+
+    <p>Badges in different Positions:</p>
+    <button class="btn btn-primary position-relative">
+      Inbox
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        99+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+
+    <button class="btn btn-secondary position-relative">
+      Notifications
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        99+
+        <span class="visually-hidden">unread notifications</span>
+      </span>
+    </button>
+
+    <button type="button" class="btn btn-primary position-relative">
+      Profile
+      <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+        <span class="visually-hidden">New alerts</span>
+      </span>
+    </button>
+
+    <p>learn more about Badge Components<a href="https://getbootstrap.com/docs/5.3/components/badge/" target="_blank">
+        here</a>.</p>
+  </div>
+</body>
+
+</html>
