@@ -1,0 +1,80 @@
+======================================================
+           TOPIC: STRINGS IN JAVASCRIPT
+======================================================
+
+1. WHAT IS A STRING?
+-----------------------
+A String is a data type used to represent text. It is simply a sequence of characters (letters, numbers, symbols, or spaces) wrapped in quotes. 
+
+If you put a number inside quotes, JavaScript treats it as text, not a math number.
+typeof "100" // Returns "string"
+
+2. THREE WAYS TO CREATE STRINGS
+-----------------------
+JavaScript gives you three ways to wrap your text:
+
+- Single Quotes (' ')
+  let firstName = 'Tony';
+
+- Double Quotes (" ")
+  let lastName = "Stark";
+
+(Single and double quotes do the exact same thing. Just be consistent, and be careful if your text actually contains an apostrophe: let phrase = "It's a good day"; )
+
+- Backticks (` `) - Found above the Tab key
+  let job = `Engineer`;
+  *Note: Backticks are special and power up your strings. See section 4!
+
+3. STRING CONCATENATION (Joining Text)
+-----------------------
+You can join multiple strings together using the plus (+) operator.
+
+let greeting = "Hello " + "World"; // Result: "Hello World"
+
+let user = "Tony";
+let welcomeMessage = "Welcome back, " + user + "!"; 
+// Result: "Welcome back, Tony!"
+
+4. TEMPLATE LITERALS (The Magic of Backticks)
+-----------------------
+Using backticks (` `) creates a "Template Literal". This allows you to inject variables directly into your string without using messy plus signs and extra quotes. You do this using a dollar sign and curly braces: ${ }
+
+let name = "Tony";
+let age = 23;
+
+// The Old Way (Messy):
+let sentence1 = "My name is " + name + " and I am " + age + " years old.";
+
+// The Modern Way (Clean):
+let sentence2 = `My name is ${name} and I am ${age} years old.`;
+
+5. STRING PROPERTIES & METHODS
+-----------------------
+Strings come with built-in tools to help you measure or change them.
+
+- length: Tells you how many characters are in the string (including spaces).
+  let word = "Apple";
+  word.length; // Returns 5
+
+- toUpperCase() / toLowerCase(): Changes the capitalization.
+  let shout = "hello".toUpperCase(); // "HELLO"
+  let whisper = "HELLO".toLowerCase(); // "hello"
+
+- indexOf(): Finds the position of a specific word or letter (starts counting at 0).
+  let text = "Find the hero";
+  text.indexOf("hero"); // Returns 9
+
+- slice(): Extracts a piece of the string.
+  let alphabet = "ABCDEFG";
+  alphabet.slice(0, 3); // Returns "ABC" (Grabs from position 0 up to 3)
+
+6. ESCAPE CHARACTERS (\)
+-----------------------
+Sometimes you need to put special characters or new lines inside a string. You use a backslash (\) to "escape" the normal rules.
+
+- \n (New line)
+  let multiLine = "Line One\nLine Two"; 
+
+- \" or \' (Escaping quotes inside matching quotes)
+  let quote = "He said, \"JavaScript is awesome!\" to me.";
+======================================================
