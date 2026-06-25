@@ -1,0 +1,61 @@
+======================================================
+         TOPIC: JAVASCRIPT DATA TYPES
+======================================================
+
+1. WHAT ARE DATA TYPES?
+-----------------------
+When you store data in a variable, the computer needs to know what *kind* of data it is. Is it text? Is it a number? Is it a list? This "kind" is called a Data Type.
+
+JavaScript data types are divided into two main categories:
+A) Primitive Types (Simple data)
+B) Non-Primitive / Reference Types (Complex data)
+
+2. PRIMITIVE DATA TYPES (The Basics)
+-----------------------
+These store a single, simple value. There are 7 primitive types in JS:
+
+- NUMBER: Represents both whole numbers and decimals.
+  Example: let age = 23; 
+  Example: let price = 9.99;
+
+- STRING: Represents text. Must be wrapped in quotes (' ' or " " or ` `).
+  Example: let name = "tony";
+
+- BOOLEAN: Represents a logical entity and can only have two values: true or false. Think of it like a light switch.
+  Example: let isLoggedOn = true;
+  Example: let isGameOver = false;
+
+- UNDEFINED: A variable that has been declared but has not yet been assigned a value.
+  Example: let score; // The value is undefined right now.
+
+- NULL: An intentional absence of any object value. It means "nothing" or "empty".
+  Example: let currentWinner = null;
+
+- SYMBOL: A unique and immutable value, mostly used as object properties (advanced).
+- BIGINT: Used to store extremely large numbers that are too big for the standard Number type.
+
+3. NON-PRIMITIVE DATA TYPES (Complex)
+-----------------------
+These can store collections of data or more complex entities.
+
+- OBJECT: A collection of related data stored as key-value pairs (like a dictionary).
+  Example: 
+  let player = {
+      name: "tony",
+      age: 23,
+      isPremium: true
+  };
+
+- ARRAY: A special type of object used to store a list of multiple values in a single variable. Enclosed in square brackets [ ].
+  Example: let highScores = [100, 95, 80, 50];
+
+4. THE 'typeof' OPERATOR
+-----------------------
+If you ever forget what data type a variable holds, JavaScript has a built-in tool called `typeof` to tell you.
+
+typeof "tony"      // Returns "string"
+typeof 23          // Returns "number"
+typeof false       // Returns "boolean"
+typeof undefined   // Returns "undefined"
+
+======================================================
