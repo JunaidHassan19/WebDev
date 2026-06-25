@@ -1,0 +1,60 @@
+======================================================
+           TOPIC: STRING INDICES IN JS
+======================================================
+
+1. WHAT IS AN INDEX?
+-----------------------
+In JavaScript (and most programming languages), strings are indexed. This means every single character in the string, including spaces and punctuation, is assigned a numerical position called an "index".
+
+The most important rule: JavaScript uses ZERO-BASED INDEXING. The computer always starts counting at 0, not 1.
+
+Example string: "APPLE"
+Character:  A   P   P   L   E
+Index:      0   1   2   3   4
+
+2. BRACKET NOTATION (Accessing Characters)
+-----------------------
+To get a specific character from a string, you write the variable name followed by square brackets [ ] containing the index number.
+
+let word = "HELLO";
+word[0]; // Returns "H"
+word[1]; // Returns "E"
+word[4]; // Returns "O"
+
+If you try to access an index that doesn't exist, JavaScript returns 'undefined'.
+word[10]; // Returns undefined
+
+3. THE LENGTH TRICK (Getting the Last Character)
+-----------------------
+Because counting starts at 0, the last character's index is always one less than the total length of the string.
+
+let name = "Tony";
+// length is 4. The last index is 3 (T=0, o=1, n=2, y=3).
+name[name.length - 1]; // Returns "y"
+
+4. THE .at() METHOD (The Modern Way)
+-----------------------
+Introduced in 2022, the `.at()` method makes finding characters much easier, especially from the end of the string, because it allows negative numbers.
+
+let fruit = "BANANA";
+fruit.at(0);   // Returns "B" (Same as fruit[0])
+fruit.at(-1);  // Returns "A" (Grabs the very last character!)
+fruit.at(-2);  // Returns "N" (Grabs the second to last character)
+
+5. THE .charAt() METHOD (The Old Way)
+-----------------------
+You might see this in older codebases. It does the exact same thing as bracket notation but uses a built-in function instead.
+
+let color = "BLUE";
+color.charAt(2); // Returns "U"
+
+6. IMMUTABILITY (You can look, but you can't touch)
+-----------------------
+Strings in JavaScript are "immutable". This means you cannot alter or replace a specific character just by pointing to its index. 
+
+let pet = "CAT";
+pet[0] = "B"; // You might expect this to make "BAT"
+console.log(pet); // Still returns "CAT". JavaScript ignores the attempt.
+
+To change a string, you must reassign the entire variable to a brand new string.
+======================================================
