@@ -1,0 +1,67 @@
+======================================================
+         TOPIC: OPERATOR PRECEDENCE IN JS
+======================================================
+
+1. WHAT IS OPERATOR PRECEDENCE?
+-----------------------
+In school, you might have learned "BODMAS" or "PEMDAS" for math (Parentheses, Exponents, Multiplication/Division, Addition/Subtraction). This rule dictates which part of a math problem is solved first.
+
+Operator Precedence is JavaScript's version of BODMAS. It is a strict set of rules that tells the computer which operators to evaluate first when there are several in one statement.
+
+Example: 
+let result = 10 + 5 * 2; 
+
+Does this equal 30 (10+5, then *2)? 
+Or does it equal 20 (5*2, then +10)?
+Because multiplication has a higher precedence than addition, the result is 20.
+
+2. THE HIERARCHY (From Highest to Lowest)
+-----------------------
+Here is the order in which JavaScript evaluates operators. Operations higher on this list happen before operations lower on the list.
+
+1. Grouping: ( )  <- Always evaluate what is inside parentheses first!
+2. Unary: ++, --, ! (NOT)
+3. Exponentiation: **
+4. Multiplication/Division/Modulus: *, /, %
+5. Addition/Subtraction: +, -
+6. Relational/Comparisons: >, <, >=, <=
+7. Equality: ==, !=, ===, !==
+8. Logical AND: &&
+9. Logical OR: ||
+10. Assignment: =, +=, -=, etc.
+
+3. HOW TO READ IT (Examples)
+-----------------------
+Example A:
+let x = 5 + 3 > 6;
+- Math (+) happens before Comparison (>)
+- JavaScript sees: 8 > 6
+- Result: true
+
+Example B:
+let y = true || false && false;
+- Logical AND (&&) happens before Logical OR (||)
+- JavaScript sees: true || (false && false) -> true || false
+- Result: true
+
+4. ASSOCIATIVITY (What if they are the same?)
+-----------------------
+What happens if two operators have the EXACT SAME precedence? 
+Example: 100 / 10 * 2
+
+JavaScript uses "Associativity" to break the tie.
+- Most operators evaluate Left-to-Right.
+  (100 / 10 is evaluated first, then multiplied by 2. Result = 20).
+- Assignment operators (=) evaluate Right-to-Left.
+  let a = b = c = 5; (c becomes 5, then b becomes 5, then a becomes 5).
+
+5. THE GOLDEN RULE: USE PARENTHESES!
+-----------------------
+You don't need to memorize the entire precedence table. The best developers use parentheses ( ) to force the order they want and to make their code readable for other humans.
+
+Instead of writing this confusing line:
+let check = age > 18 && money >= 20 || hasTicket;
+
+Write this:
+let check = ((age > 18) && (money >= 20)) || hasTicket;
+======================================================
