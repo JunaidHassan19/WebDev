@@ -1,0 +1,62 @@
+======================================================
+       TOPIC: ASSIGNMENT OPERATORS IN JS
+======================================================
+
+1. WHAT ARE ASSIGNMENT OPERATORS?
+-----------------------
+Assignment operators are used to assign a value to a variable. 
+
+The most important thing to remember: In programming, a single equals sign (=) does NOT mean "these two things are equal" (like it does in math). It means "take the value on the right, and put it into the container on the left."
+
+2. THE BASIC ASSIGNMENT (=)
+-----------------------
+The single equals sign is the foundation of assigning data. JavaScript always calculates whatever is on the right side of the `=` first, and then assigns that final result to the variable on the left.
+
+let score = 10;
+let newScore = score + 5; // Calculates 10 + 5 first, then assigns 15 to newScore
+
+3. COMPOUND (SHORTHAND) OPERATORS
+-----------------------
+Programmers love to save time. Often, you need to update a variable based on its *current* value (like adding points to a score). Instead of writing the variable name twice, you can use compound operators.
+
+- Addition Assignment (+=)
+  Long way:  score = score + 5;
+  Shortcut:  score += 5;
+
+- Subtraction Assignment (-=)
+  Long way:  health = health - 10;
+  Shortcut:  health -= 10;
+
+- Multiplication Assignment (*=)
+  Long way:  multiplier = multiplier * 2;
+  Shortcut:  multiplier *= 2;
+
+- Division Assignment (/=)
+  Long way:  pizzaSlices = pizzaSlices / 2;
+  Shortcut:  pizzaSlices /= 2;
+
+- Remainder/Modulus Assignment (%=)
+  Long way:  tickets = tickets % 3;
+  Shortcut:  tickets %= 3;
+
+- Exponentiation Assignment (**=)
+  Long way:  power = power ** 2;
+  Shortcut:  power **= 2;
+
+4. STRING ASSIGNMENT
+-----------------------
+The `+=` operator is also incredibly useful for Strings (text). It allows you to tack new text onto the end of existing text.
+
+let greeting = "Hello";
+greeting += " there!";  
+
+// greeting is now "Hello there!"
+
+5. NEW LOGICAL ASSIGNMENT OPERATORS (Advanced)
+-----------------------
+Modern JavaScript (ES2021) introduced ways to combine logical checks with assignment. You might see these in advanced code:
+
+- &&= (Logical AND assignment): Assigns the value only if the left side is currently TRUE.
+- ||= (Logical OR assignment): Assigns the value only if the left side is currently FALSE (or "falsy").
+- ??= (Nullish coalescing assignment): Assigns the value only if the left side is exactly `null` or `undefined`.
+======================================================
