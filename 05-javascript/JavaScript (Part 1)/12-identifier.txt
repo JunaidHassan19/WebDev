@@ -1,0 +1,52 @@
+======================================================
+           TOPIC: IDENTIFIER RULES IN JS
+======================================================
+
+1. WHAT IS AN IDENTIFIER?
+-----------------------
+In JavaScript, an "identifier" is simply the name you give to things like variables, functions, or classes. 
+
+When you write: let userAge = 23; 
+The word "userAge" is the identifier.
+
+2. THE HARD RULES (Code will break if you break these)
+-----------------------
+JavaScript is very strict about what you can and cannot name your variables.
+
+- RULE A: Allowed Characters
+  Identifiers can only contain letters (a-z, A-Z), numbers (0-9), underscores (_), and dollar signs ($). No spaces, dashes, or special symbols (!, @, #, %, etc.) are allowed.
+  Valid:   userName, user_name, $userName, user1
+  Invalid: user-name, user name, user@name
+
+- RULE B: The First Character
+  An identifier MUST start with a letter, an underscore (_), or a dollar sign ($). It CANNOT start with a number.
+  Valid:   player1, _score, $total
+  Invalid: 1player, 3dGraph
+
+- RULE C: Reserved Words
+  You cannot use words that JavaScript already uses for its own instructions (keywords). 
+  Invalid: let, const, var, function, return, if, else, true, false.
+
+3. THE GOLDEN RULE: CASE SENSITIVITY
+-----------------------
+JavaScript is strictly case-sensitive. This means uppercase and lowercase letters are treated as completely different characters.
+
+`score`, `Score`, and `SCORE` are three completely different boxes in the computer's memory.
+
+4. BEST PRACTICES (Naming Conventions)
+-----------------------
+While JavaScript doesn't enforce these, programmers follow these rules so everyone can read each other's code easily:
+
+- camelCase (Standard Variables)
+  Used for almost everything. Start with a lowercase letter, and capitalize the first letter of every following word.
+  Example: myHighScore, isUserLoggedIn, calculateTotalArea
+
+- UPPERCASE (Hard-coded Constants)
+  Used for values that are fixed and will never change. Words are separated by underscores.
+  Example: MAX_LIVES, PI, API_KEY
+
+- Be Descriptive
+  Don't use single letters unless it's for a very short math loop. 
+  Bad:  let a = "Tony";
+  Good: let firstName = "Tony";
+======================================================
