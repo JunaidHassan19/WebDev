@@ -1,0 +1,64 @@
+======================================================
+           TOPIC: UNARY OPERATORS IN JS
+======================================================
+
+1. WHAT IS A UNARY OPERATOR?
+-----------------------
+Most operators you use in math require TWO values (called "operands") to work. For example, 5 + 3 requires the 5 and the 3. These are called binary operators.
+
+A "Unary" operator is special because it only needs ONE value to work. It sits right next to a single variable or number and modifies it.
+
+2. INCREMENT (++) AND DECREMENT (--)
+-----------------------
+These are the most common unary operators. They are shortcuts for adding or subtracting exactly 1 from a variable.
+
+- Increment (++): Adds 1
+  let score = 10;
+  score++; // score is now 11
+
+- Decrement (--): Subtracts 1
+  let lives = 3;
+  lives--; // lives is now 2
+
+*Note on Placement (Prefix vs. Postfix)*: 
+You can put the ++ before or after the variable, and it changes slightly how it behaves in a larger equation:
+- x++ (Postfix): Uses the current value of x in the equation, THEN adds 1 behind the scenes.
+- ++x (Prefix): Adds 1 to x immediately, THEN uses the new value in the equation.
+
+3. LOGICAL NOT (!)
+-----------------------
+This operator flips a boolean value to its exact opposite. Think of it as an "Opposite Day" switch.
+
+let isGameOver = false;
+let continuePlaying = !isGameOver; // Sets this to true (the opposite of false)
+
+If you use it on non-boolean values, it will force them into a boolean first, and then flip them.
+
+4. UNARY PLUS (+) AND NEGATION (-)
+-----------------------
+You already know + and - for math, but when used on a single value, they do something different: they try to convert things into Numbers.
+
+- Unary Plus (+): The fastest way to convert a string into a number.
+  let stringAge = "25";
+  let numAge = +stringAge; // numAge is now the actual number 25
+
+- Unary Negation (-): Converts to a number AND makes it negative.
+  let steps = "10";
+  let backwards = -steps; // backwards is now -10
+
+5. THE 'typeof' OPERATOR
+-----------------------
+We mentioned this in the Data Types file! `typeof` is a unary operator because it only looks at one value and returns a string telling you what type of data it is.
+
+typeof 42;         // Returns "number"
+typeof "Batman";   // Returns "string"
+typeof true;       // Returns "boolean"
+
+6. THE 'delete' OPERATOR
+-----------------------
+Used specifically for Objects. It removes a property (key-value pair) from an object.
+
+let user = { name: "Tony", age: 23 };
+delete user.age; 
+// The user object is now just { name: "Tony" }
+======================================================
