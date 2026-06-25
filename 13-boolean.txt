@@ -1,0 +1,58 @@
+======================================================
+           TOPIC: BOOLEANS IN JAVASCRIPT
+======================================================
+
+1. WHAT IS A BOOLEAN?
+-----------------------
+A Boolean is the simplest data type in JavaScript. It can only hold one of two possible values: 
+- true
+- false
+
+Think of it like a light switch: it is either ON (true) or OFF (false). 
+
+Note: You do NOT put quotes around them. "true" is a String, whereas true is a Boolean.
+
+let isGameOver = false;
+let hasHighSpeedInternet = true;
+
+2. HOW DO WE GET BOOLEANS?
+-----------------------
+You can assign them directly (like above), but most of the time, Booleans are created dynamically by the computer when you compare things or check conditions.
+
+let age = 15;
+let canDrive = age >= 16; 
+// JavaScript checks "Is 15 greater than or equal to 16?" 
+// The answer is no, so 'canDrive' becomes the Boolean 'false'.
+
+3. TRUTHY AND FALSY VALUES (The JavaScript Quirk)
+-----------------------
+In JavaScript, EVERYTHING has an inherent Boolean value, even if it's not strictly a true/false variable. If you put a string or a number inside an 'if' statement, JavaScript will guess if it means true or false.
+
+There are only 6 values in all of JavaScript that are considered "Falsy" (they act like 'false'):
+1. false (the actual boolean)
+2. 0 (the number zero)
+3. "" (an empty string)
+4. null
+5. undefined
+6. NaN (Not-a-Number)
+
+EVERYTHING else is considered "Truthy" (acts like 'true'). 
+Examples of Truthy values: 
+- "hello" (a string with text)
+- 42 (any number other than 0)
+- [] (even an empty array is true!)
+- "false" (a string containing the word false is still text, so it's true!)
+
+4. HOW TO FORCE A BOOLEAN CONVERSION
+-----------------------
+If you want to know exactly what the Boolean value of something is, you can convert it using two methods:
+
+- The Boolean() Function:
+  Boolean(0);         // Returns false
+  Boolean("Tony");    // Returns true
+
+- The Double NOT (!!) Trick: 
+  Programmers often use two exclamation points to quickly flip a value to its opposite boolean, and then back to its real boolean.
+  !!0;                // Returns false
+  !!"Tony";           // Returns true
+======================================================
