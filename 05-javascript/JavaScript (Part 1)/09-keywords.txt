@@ -1,0 +1,59 @@
+======================================================
+         TOPIC: LET, CONST, AND VAR IN JS
+======================================================
+
+1. WHAT ARE THEY?
+-----------------------
+These three keywords are used to "declare" (create) a variable. They tell the computer: "Hey, I am making a new container, get some memory ready."
+
+Example: 
+let score = 10;
+const name = "Tony";
+var age = 23;
+
+However, they all behave slightly differently.
+
+2. VAR (The Old Way - Avoid Using)
+-----------------------
+Before 2015, `var` was the only way to create variables in JavaScript. 
+
+- Scope: It is "Function Scoped". If you create a `var` inside a function, it stays there. But if you create it inside an `if` statement or a `for` loop, it "leaks" out into the rest of your code, which causes massive bugs.
+- Updating: Can be updated and even completely re-declared.
+
+Example:
+var player = "Tony";
+var player = "Steve"; // Totally legal, but often leads to mistakes.
+
+3. LET (The Modern Way for Changing Values)
+-----------------------
+Introduced in 2015 (ES6) to fix the problems with `var`. 
+
+- Scope: It is "Block Scoped". It only exists inside the nearest curly braces { }. If you create it inside an `if` statement, it dies when the `if` statement is over. No leaking!
+- Updating: You can change its value (update it), but you CANNOT re-declare the exact same variable in the same block.
+
+Example:
+let health = 100;
+health = 90;       // Legal! The value changed.
+let health = 50;   // Error! You already declared 'health'.
+
+4. CONST (The Modern Way for Fixed Values)
+-----------------------
+Also introduced in 2015. Short for "Constant". 
+
+- Scope: Block Scoped (just like `let`).
+- Updating: You CANNOT change its value, and you CANNOT re-declare it. You also MUST give it a value the moment you create it.
+
+Example:
+const birthYear = 2000;
+birthYear = 2001;  // Error! You cannot change a const.
+
+*Special Note on Arrays/Objects*: If a `const` holds an array or object, you can't reassign the whole variable, but you CAN change what's inside it (like adding a new item to the array).
+
+5. THE GOLDEN RULE (Which one should I use?)
+-----------------------
+Modern JavaScript developers follow a very simple rule:
+
+1. Always default to using `const`.
+2. If you know the value will need to change later (like a score in a game, or a counter in a loop), use `let`.
+3. Pretend `var` does not exist. (You only need to know it so you can read old code).
+======================================================
