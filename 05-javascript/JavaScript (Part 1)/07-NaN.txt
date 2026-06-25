@@ -1,0 +1,52 @@
+======================================================
+           TOPIC: NaN (Not-a-Number) IN JS
+======================================================
+
+1. WHAT IS NaN?
+-----------------------
+NaN stands for "Not-a-Number". It is a special value in JavaScript that indicates an invalid number. It usually shows up when a mathematical operation fails or when you try to parse something into a number that doesn't make sense.
+
+2. HOW DO YOU GET NaN? (Common Scenarios)
+-----------------------
+You will typically see NaN when you force JavaScript to do math with text or invalid data:
+
+- Math with non-numeric strings:
+  "apple" / 2          // Result: NaN
+  "hello" * 5          // Result: NaN
+  (Note: "10" / 2 will work and give 5, because JS is sneaky and auto-converts the string if it contains only numbers).
+
+- Failing to convert text to a number:
+  parseInt("Tony")     // Result: NaN
+  Number("Hello")      // Result: NaN
+
+- Invalid math calculations:
+  Math.sqrt(-1)        // Result: NaN (Square root of a negative number)
+  0 / 0                // Result: NaN
+
+3. THE WEIRDEST QUIRK: It IS a Number!
+-----------------------
+Even though NaN stands for "Not-a-Number", JavaScript categorizes it under the Number data type. It basically means "an invalid number".
+
+typeof NaN           // Returns "number"
+
+4. THE SECOND WEIRDEST QUIRK: It Hates Itself
+-----------------------
+NaN is the ONLY value in JavaScript that is not equal to itself. You cannot use the standard equal signs to check if something is NaN.
+
+NaN === NaN          // Returns false!
+NaN == NaN           // Returns false!
+
+5. SO, HOW DO WE CHECK FOR NaN?
+-----------------------
+Because you can't do `if (score === NaN)`, JavaScript gives you built-in tools to safely check for it.
+
+- Number.isNaN()  **[Highly Recommended]**
+  This is the safest and most modern way to check if a value is exactly NaN.
+  Number.isNaN(NaN)       // Returns true
+  Number.isNaN("apple")   // Returns false
+
+- isNaN()  [The older way - use with caution]
+  This older method tries to convert the value to a number first, which can lead to confusing results.
+  isNaN(NaN)        // Returns true
+  isNaN("apple")    // Returns true (Because "apple" converts to NaN)
+======================================================
