@@ -1,0 +1,63 @@
+======================================================
+           TOPIC: OPERATORS IN JAVASCRIPT
+======================================================
+
+1. WHAT ARE OPERATORS?
+-----------------------
+Operators are special symbols used to perform operations on variables and values. You already know basic math operators, but JavaScript has several categories of them to handle different types of logic and data.
+
+2. ARITHMETIC OPERATORS (Math)
+-----------------------
+Used to perform basic mathematics on numbers.
++   Addition
+-   Subtraction
+* Multiplication
+/   Division
+%   Modulus (Returns the division remainder, e.g., 10 % 3 = 1)
+** Exponentiation (Power)
+++  Increment (Adds 1 to a variable, e.g., x++)
+--  Decrement (Subtracts 1 from a variable, e.g., x--)
+
+3. ASSIGNMENT OPERATORS (Setting values)
+-----------------------
+Used to assign or update values in variables.
+=   Assign (e.g., let x = 5)
++=  Add and assign (e.g., x += 2 is a shortcut for x = x + 2)
+-=  Subtract and assign
+*=  Multiply and assign
+/=  Divide and assign
+
+4. COMPARISON OPERATORS (Testing values)
+-----------------------
+Used to compare two values. They always return a Boolean (true or false).
+==   Equal to (Checks value only)
+===  Strict equal to (Checks value AND data type - highly recommended!)
+!=   Not equal to
+!==  Strict not equal to
+>    Greater than
+<    Less than
+>=   Greater than or equal to
+<=   Less than or equal to
+
+Example: 5 === 5    // Returns true
+Example: 5 === "5"  // Returns false (Number vs. String)
+
+5. LOGICAL OPERATORS (Combining conditions)
+-----------------------
+Used to combine multiple comparison tests together. Think of them as the brain of your decision-making code.
+&&  Logical AND (Returns true ONLY if BOTH sides are true)
+||  Logical OR (Returns true if AT LEAST ONE side is true)
+!   Logical NOT (Reverses the boolean value)
+
+Example: (5 > 3) && (10 > 5) // Returns true (Both are true)
+Example: (5 > 10) || (2 > 1) // Returns true (Because 2 > 1 is true)
+Example: !true               // Returns false
+
+6. STRING OPERATORS (Text)
+-----------------------
+The + operator can also be used to join (concatenate) strings together.
+
+let word1 = "Hello";
+let word2 = "World";
+let combined = word1 + " " + word2; // Result: "Hello World"
+======================================================
