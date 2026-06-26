@@ -24,7 +24,7 @@ if (age1 >= 18) {
   console.log("Adult");
 } else if (age1 >= 13) {
   console.log("Teenager");
-} else {
+} else if (age1 >= 5) {
   console.log("Child");
 }
 
@@ -37,6 +37,6 @@ if(marks >= 98) {
   console.log("B");
 }else if(marks >= 50) {
   console.log("C");
-}else{
+}else if(marks >= 35) {
   console.log("F")
 }
