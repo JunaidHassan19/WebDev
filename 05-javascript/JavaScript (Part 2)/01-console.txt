@@ -1,0 +1,43 @@
+======================================================
+           TOPIC: CONSOLE.LOG() IN JS
+======================================================
+
+1. WHAT IS IT?
+-----------------------
+`console.log()` is a built-in JavaScript function used to print output to the web console (like the one found in Chrome Developer Tools). 
+
+It does NOT show up on the actual web page for the regular user to see. It is purely a behind-the-scenes tool for developers.
+
+2. WHY DO WE USE IT?
+-----------------------
+It is your best friend for debugging. You use it to peek inside your code to see what a variable currently holds, to check if a specific block of code is running, or to see the results of a calculation.
+
+3. HOW TO USE IT (The Basics)
+-----------------------
+You can log almost any data type directly inside the parentheses.
+
+- Logging text (Strings):
+  console.log("Hello World from Apna College!");
+
+- Logging numbers and math operations (it calculates the math first, then logs the result):
+  console.log(1 + 2); // The console will print: 3
+
+4. VARIABLES VS. STRINGS (A Common Mistake)
+-----------------------
+Be careful with quotes! Quotes mean "print exactly this text". No quotes means "go find a variable with this name and print what is inside it".
+
+let num = 123;
+
+console.log("num");  // Prints the literal word: num
+console.log(num);    // Prints the value of the variable: 123
+
+5. LOGGING MULTIPLE ITEMS AT ONCE
+-----------------------
+You don't need a separate `console.log()` for every single thing. You can print multiple pieces of data in a single line by separating them with commas. JavaScript will automatically add a space between them in the console output.
+
+let num = 123;
+console.log("Hello", "World", num, (1 + 5)); 
+
+// The console evaluates the math, finds the variable, and prints: 
+// Hello World 123 6
+======================================================
