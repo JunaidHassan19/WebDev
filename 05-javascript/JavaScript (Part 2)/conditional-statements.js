@@ -40,3 +40,28 @@ if(marks >= 98) {
 }else if(marks >= 35) {
   console.log("F")
 }
+
+// ============== else statement ================
+
+// if(condition) {
+//   // code to execute if condition is true
+// } else {
+//   // code to execute if condition is false
+// }
+
+let age2 = 15;
+
+if (age2 >= 18) {
+  console.log("Adult");
+} else {
+  console.log("Not an Adult");
+}
+
+let month = "January";
+if(month === "January") {
+  console.log("Winter");
+} else if(month === "July") {
+  console.log("Summer");
+} else {
+  console.log("Other Month");
+}
