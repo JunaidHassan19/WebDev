@@ -26,3 +26,13 @@ if(size === 'XL'){
     console.log("Price is Rs. 50")
 
 }
+
+// Qs: A "good string" is a string that starts with the letter 'a' and has a length >3. Write a program to check if a string is a good string or not.
+
+let str = 'apple';
+
+if(str[0] === 'a' && str.length > 3) {
+  console.log("Good string");
+}else{
+  console.log("Not a Good string")
+}
