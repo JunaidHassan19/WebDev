@@ -59,3 +59,13 @@ if(a > b && a > c) {
 }else{
   console.log("C is greater = ", c);
 }
+
+//Qs 6:
+let num1 = 325346842;
+let num2 = 47852;
+
+if(num1%10 === num2%10) {
+  console.log(`${num1} And ${num2} have the same last digit i.e.2`);
+} else{
+  console.log(`${num1} And ${num2} have not the same last digit`);
+}
