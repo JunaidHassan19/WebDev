@@ -46,3 +46,16 @@ if(str[0] === 'A' && str.length > 5) {
 }else{
   console.log("Not a golden string");
 }
+
+//Qs 5;
+let a = 55;
+let b = 10;
+let c = 15;
+
+if(a > b && a > c) {
+  console.log("A is greater = ", a);
+} else if (b > a && b > c) {
+  console.log("B is greater = ", b);
+}else{
+  console.log("C is greater = ", c);
+}
