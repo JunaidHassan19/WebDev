@@ -37,3 +37,12 @@ switch(quarter){
   default:
     console.log("Invalid");
 }
+
+// Qs 4:
+let str = "Application";
+
+if(str[0] === 'A' && str.length > 5) {
+  console.log("Golden string");
+}else{
+  console.log("Not a golden string");
+}
