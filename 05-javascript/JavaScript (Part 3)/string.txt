@@ -2,6 +2,9 @@ JavaScript String Methods
 
 A string is a sequence of characters. JavaScript provides many built-in methods to work with strings.
 
+
+Note** Strings are immutable in JavaScript, meaning that once a string is created, it cannot be changed. Any operation that modifies a string will create a new string instead of altering the original one.
+
 1. length
 Returns the number of characters in a string.
 Example: "Hello".length   // 5
