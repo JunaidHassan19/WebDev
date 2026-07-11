@@ -1,0 +1,65 @@
+JavaScript String Methods
+
+A string is a sequence of characters. JavaScript provides many built-in methods to work with strings.
+
+1. length
+Returns the number of characters in a string.
+Example: "Hello".length   // 5
+
+2. toUpperCase()
+Converts all characters to uppercase.
+Example: "hello".toUpperCase()   // "HELLO"
+
+3. toLowerCase()
+Converts all characters to lowercase.
+Example: "HELLO".toLowerCase()   // "hello"
+
+4. trim()
+Removes extra spaces from both ends of a string.
+Example: "  hello  ".trim()   // "hello"
+
+5. slice(start, end)
+Extracts a part of a string.
+Example: "JavaScript".slice(0, 4)   // "Java"
+
+6. substring(start, end)
+Returns part of a string between two positions.
+Example: "JavaScript".substring(0, 4)   // "Java"
+
+7. replace(oldValue, newValue)
+Replaces one substring with another.
+Example: "I like Java".replace("Java", "Python")   // "I like Python"
+
+8. replaceAll(oldValue, newValue)
+Replaces all matching substrings.
+Example: "a a a".replaceAll("a", "b")   // "b b b"
+
+9. split(separator)
+Splits a string into an array.
+Example: "a,b,c".split(",")   // ["a", "b", "c"]
+
+10. concat()
+Joins two or more strings.
+Example: "Hello".concat(" World")   // "Hello World"
+
+11. charAt(index)
+Returns the character at a given position.
+Example: "Hello".charAt(1)   // "e"
+
+12. indexOf(value)
+Finds the first position of a value.
+Example: "Hello".indexOf("l")   // 2
+
+13. includes(value)
+Checks whether a string contains a value.
+Example: "Hello".includes("ell")   // true
+
+14. startsWith(value)
+Checks if a string starts with a specific value.
+Example: "Hello".startsWith("He")   // true
+
+15. endsWith(value)
+Checks if a string ends with a specific value.
+Example: "Hello".endsWith("lo")   // true
+
+These string methods are used for text formatting, searching, and manipulation.
