@@ -1,0 +1,73 @@
+Array Data Structure
+
+An array is a data structure used to store multiple values in a single variable.  
+In JavaScript, arrays can hold different data types such as numbers, strings, objects, and even other arrays.
+
+Example:
+let fruits = ["Apple", "Banana", "Mango"];
+
+Arrays are ordered, and each item has an index starting from 0.
+
+Common Array Methods
+
+1. length
+Returns the number of elements in an array.
+Example: ["a", "b", "c"].length   // 3
+
+2. push()
+Adds one or more elements to the end of an array.
+Example: fruits.push("Orange")
+
+3. pop()
+Removes the last element from an array.
+Example: fruits.pop()
+
+4. shift()
+Removes the first element from an array.
+Example: fruits.shift()
+
+5. unshift()
+Adds one or more elements to the beginning of an array.
+Example: fruits.unshift("Grapes")
+
+6. indexOf()
+Returns the first index of a matching element.
+Example: fruits.indexOf("Banana")   // 1
+
+7. includes()
+Checks whether an element exists in the array.
+Example: fruits.includes("Mango")   // true
+
+8. slice()
+Returns a portion of an array without modifying the original array.
+Example: fruits.slice(0, 2)   // ["Apple", "Banana"]
+
+9. splice()
+Adds, removes, or replaces elements in an array.
+Example: fruits.splice(1, 1)
+
+10. concat()
+Joins two or more arrays into one array.
+Example: [1, 2].concat([3, 4])   // [1, 2, 3, 4]
+
+11. join()
+Converts an array into a string.
+Example: fruits.join(", ")   // "Apple, Banana, Mango"
+
+12. sort()
+Sorts array elements in order.
+Example: fruits.sort()
+
+13. reverse()
+Reverses the order of elements in an array.
+Example: fruits.reverse()
+
+14. forEach()
+Executes a function for each array element.
+Example: fruits.forEach(item => console.log(item))
+
+15. map()
+Creates a new array by applying a function to each element.
+Example: [1, 2, 3].map(n => n * 2)   // [2, 4, 6]
+
+Arrays are very useful for storing and managing collections of data.
