@@ -7,3 +7,12 @@ console.log(str1.trim().toUpperCase());
 // Qs 2: saparate the "college" part in above string and replace "i" with " t" in it.
 let str2 = "ApnaCollege";
 console.log(str2.slice(4).replaceAll("l", "t"));
+
+
+//Qs 3: For given start of an array, change it to final form using methods.
+
+let months = ["january", "july", "march", "august"]
+console.log(months);
+
+months.shift();
+console.log(months);
