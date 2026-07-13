@@ -35,3 +35,18 @@ console.log(months2);
 let langu = ["c", "c++", "javascript", "python", "java", "c#", "sql"];
 let revLangu = langu.reverse().indexOf("javascript");
 console.log(revLangu);
+
+//Qs 6: create a nested array to show the following tic-tac-toe game state.
+      /*
+
+       X|   |O
+      __|___|__
+        | X |  
+      __|___|__
+       O|   |X
+      __|___|__
+
+      */
+
+let arr = [["X", " ", "O"], [" ", "X", " "], ["O", " ", "X"]];
+console.log(arr);
