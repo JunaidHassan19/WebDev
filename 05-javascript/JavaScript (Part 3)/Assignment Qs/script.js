@@ -29,3 +29,15 @@ if(str.length === 0) {
 } else{
   console.log("String is Not Blank");
 }
+
+
+// Qs 4. Write a JavaScript program to test whether the character at the given (character) index is lowercase.
+
+let word = "heLLoWorLd";
+let idx = 3;
+
+if(word[idx] === word[idx].toLowerCase()) {
+  console.log(`The character at index ${idx} is Lowercase`);
+} else {
+  console.log(`The character at index ${idx} is Not Lowercase`);
+}
