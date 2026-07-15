@@ -1,4 +1,6 @@
-// Multiplication Table of 5
+// Multiplication Table
+let num = prompt("Write a Number to print the table: ")
+
 for(let i = 1; i <= 10; i ++) {
-  console.log(`5 * ${i} = ${i*5}`);
+  console.log(`${num} * ${i} = ${i*num}`);
 }
