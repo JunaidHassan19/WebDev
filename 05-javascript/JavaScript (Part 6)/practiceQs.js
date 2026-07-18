@@ -41,4 +41,18 @@ function sum(num){
   return sum;
 }
 
-console.log(sum(5));
+// console.log(sum(5));
+
+//Qs 5
+let str = ['Hi', 'Hello', 'Bye', '!'];
+
+function concat(str) {
+  let result='';
+  for(let i = 0; i < str.length; i++){
+    result += str[i];
+  }
+
+  return result;
+}
+
+console.log(concat(str));
