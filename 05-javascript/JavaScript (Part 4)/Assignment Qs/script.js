@@ -21,3 +21,16 @@ while(copy > 0) {
   copy = Math.floor(copy/10);
 }
 console.log(count);
+
+// Qs 3. Write a JS program to find the sum of digits in a number. Example: if number = 287152,sum = 25
+
+let numbr = 287152;
+let sum = 0;
+
+let copy2 = numbr;
+while(copy2 > 0) {
+  digit = copy2 % 10;
+  sum += digit;
+  copy2 = Math.floor(copy2/10);
+}
+console.log(sum);
