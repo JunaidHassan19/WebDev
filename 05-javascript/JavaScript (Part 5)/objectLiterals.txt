@@ -1,0 +1,87 @@
+Object Literals
+
+An object literal is the simplest way to create an object in JavaScript. It uses curly braces {} to store related data as key-value pairs.
+
+Syntax:
+
+const student = {
+	name: "Junaid",
+	age: 21,
+	marks: 92
+};
+
+Here, name, age, and marks are properties, and their values can be strings, numbers, arrays, functions, or even other objects.
+
+Why use object literals?
+
+- To group related data in one place
+- To model real-world things like users, products, or cars
+- To make code easier to read and manage
+
+Accessing properties:
+
+console.log(student.name);      // Junaid
+console.log(student["marks"]); // 92
+
+Dot notation is common when the property name is known in advance. Bracket notation is useful when the property name is dynamic or contains spaces.
+
+Adding or updating properties:
+
+student.city = "Srnagar"; // Adding a new property
+student.age = 22;
+
+Removing properties:
+
+delete student.marks;
+
+Methods inside object literals:
+
+const calculator = {
+	add(a, b) {
+		return a + b;
+	},
+	sub(a, b) {
+		return a - b;
+	}
+};
+
+console.log(calculator.add(5, 3)); // 8
+
+Nested objects:
+
+const user = {
+	username: "alice",
+	profile: {
+		email: "alice@example.com",
+		address: "kashmir"
+	}
+};
+
+console.log(user.profile.email);
+
+Computed property names:
+
+let key = "score";
+const game = {
+	[key]: 100
+};
+
+Useful object methods:
+
+- Object.keys(obj) returns all property names
+- Object.values(obj) returns all property values
+- Object.entries(obj) returns key-value pairs
+
+Example:
+
+console.log(Object.keys(student));
+console.log(Object.values(student));
+console.log(Object.entries(student));
+
+Important points:
+
+- Object property names are usually strings or symbols
+- Objects are not ordered like arrays, but property order is preserved in modern JavaScript for most practical cases
+- Object literals are often used for configuration, data storage, and function arguments
+
+In short, object literals are a clean and flexible way to create objects directly in code.
