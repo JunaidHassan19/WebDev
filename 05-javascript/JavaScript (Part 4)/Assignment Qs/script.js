@@ -44,3 +44,15 @@ for(let i = 1; i <= n; i ++) {
   factorial *= i;
 }
 console.log(`Factorial of ${n} is: ${factorial}`);
+
+// Qs 5. Find the largest number in an array with only positive numbers.
+
+let arr2 = [1, 5, 8, 0, 5, 6, 9, 2, 5];
+let largest = 0;
+
+for(let i = 0; i <= arr2.length; i ++) {
+  if(largest < arr2[i]) {
+    largest = arr2[i];
+  }
+}
+console.log(largest);
