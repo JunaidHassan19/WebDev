@@ -16,3 +16,12 @@ function dice() {
 }
 
 dice();
+
+//Qs 3:
+
+function avg(a, b, c) {
+  let average = (a+b+c)/3;
+  console.log(average);
+}
+
+avg(10, 15, 5);
