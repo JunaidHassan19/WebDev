@@ -30,8 +30,9 @@ try {
 
 console.log("This is a test");
 try {
-  console.log(a);
+  console.log(a); // This will throw a ReferenceError because 'a' is not defined
 }catch (error) {
-  console.log("An error occurred: " + error.message);
+  console.log("An error occurred: " + error.message);// Prints the error message
+  console.log("Error name: " + error.name);// Prints the error name
 }
 console.log("This is a test 2");
