@@ -10,3 +10,10 @@ const arrayAverage = (arr) => {
 
 let arr = [1, 2, 3, 4, 5];
 console.log(arrayAverage(arr)); // Output: 3
+
+// Qs 2. Write an arrow function named isEven() that takes a sing lenumber as a rgument and returns if it is even or not.
+
+const isEven = (num) => num % 2 === 0;
+
+console.log(isEven(4)); // Output: true
+console.log(isEven(5)); // Output: false
