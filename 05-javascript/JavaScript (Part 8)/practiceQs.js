@@ -4,11 +4,7 @@
 let arr = [10, 20, 30, 40, 15, 25, 35];
 
 let mul = arr.every((num) => {
-  if (num % 10 == 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return num % 10 === 0;
 });
 
 console.log(mul);
