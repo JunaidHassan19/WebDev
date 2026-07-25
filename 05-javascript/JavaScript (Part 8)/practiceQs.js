@@ -8,3 +8,15 @@ let mul = arr.every((num) => {
 });
 
 console.log(mul);
+
+// Qs 2: Create a function to find the min number in an array
+let nums = [5, 6, 2, 8, 9, 1, 6, 7];
+let min = nums.reduce((min, el) => {
+  if (min < el) {
+    return min;
+  } else {
+    return el;
+  }
+});
+
+console.log(min);
