@@ -18,3 +18,12 @@ console.log("New Array with each element plus 5:", newArr);
 let words = ["hello", "world", "javascript", "programming"];
 const upperCaseWords = words.map((word) => word.toUpperCase());
 console.log("Uppercase Words Array:", upperCaseWords);
+
+//Qs 4. Write a function called doubleAndReturnArgs which accepts an array and a variable number of arguments. The function should return a new array with the original array values and all of the additional arguments doubled.
+
+function doubleAndReturnArgs(arr, ...args) {
+  const doubledArgs = args.map((arg) => arg * 2);
+  return [...arr, ...doubledArgs];
+}
+
+console.log(doubleAndReturnArgs([1, 2, 3], 4, 5)); // Output: [1, 2, 3, 8, 10]
