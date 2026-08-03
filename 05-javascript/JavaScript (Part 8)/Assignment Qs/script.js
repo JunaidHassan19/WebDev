@@ -8,3 +8,8 @@ console.log("Squared Array:", square);
 let sum = square.reduce((acc, curr) => acc + curr);
 let average = sum / square.length;
 console.log("Average of Squared Array:", average);
+
+// Qs 2. Create a new array using the map function whose each element is equal to the original element plus 5.
+let arr = [1, 2, 3, 4, 5];
+const newArr = arr.map((num) => num + 5);
+console.log("New Array with each element plus 5:", newArr);
