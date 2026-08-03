@@ -13,3 +13,8 @@ console.log("Average of Squared Array:", average);
 let arr = [1, 2, 3, 4, 5];
 const newArr = arr.map((num) => num + 5);
 console.log("New Array with each element plus 5:", newArr);
+
+//Qs 3. Create a new array whose elements are in uppercase of words present in the original array.
+let words = ["hello", "world", "javascript", "programming"];
+const upperCaseWords = words.map((word) => word.toUpperCase());
+console.log("Uppercase Words Array:", upperCaseWords);
