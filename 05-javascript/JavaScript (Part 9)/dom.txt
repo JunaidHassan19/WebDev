@@ -1,0 +1,80 @@
+(Basic DOM - A concise guide)
+
+What is the DOM?
+- The DOM (Document Object Model) is a tree-like representation of an HTML or XML document.
+- Each element, attribute, and piece of text is a node; the root is `document`.
+
+Document object
+- `document` is the entry point to the page and exposes methods and properties to query and modify the DOM.
+
+Nodes & element types
+- Node types include: Element nodes, Text nodes, Comment nodes, Document node.
+- Elements are the most common (tags like `div`, `p`, `a`).
+
+Selecting elements
+- `document.getElementById('id')` — single element by id.
+- `document.getElementsByClassName('cls')` — live HTMLCollection.
+- `document.getElementsByTagName('tag')` — live HTMLCollection.
+- `document.querySelector(selector)` — first match (modern, flexible).
+- `document.querySelectorAll(selector)` — static NodeList (useful with `forEach`).
+
+Traversing the tree
+- `element.parentNode`, `element.children` (Element children), `element.childNodes` (all nodes).
+- `element.firstElementChild`, `element.lastElementChild`, `element.nextElementSibling`, `element.previousElementSibling`.
+
+Reading & changing content
+- `el.textContent` — safe text (no HTML parsing).
+- `el.innerHTML` — parses HTML (be careful with untrusted input).
+- `el.value` — form control value (inputs, textareas, selects).
+
+Attributes & classes
+- `el.getAttribute('href')`, `el.setAttribute('data-id', '123')`.
+- `el.removeAttribute('attr')`.
+- `el.classList` methods: `add()`, `remove()`, `toggle()`, `contains()`.
+
+Creating, inserting, removing nodes
+- `const el = document.createElement('div')`.
+- `el.textContent = 'Hello'` or `el.innerHTML = '<b>Hi</b>'`.
+- `parent.appendChild(el)`, `parent.insertBefore(newNode, referenceNode)`.
+- `node.remove()` or `parent.removeChild(node)`.
+- Use `document.createDocumentFragment()` to batch multiple inserts for better performance.
+
+Event handling
+- `el.addEventListener('click', handler)` — attach listeners (preferred over inline handlers).
+- `el.removeEventListener('click', handler)` — remove listener.
+- The event object (`e`) provides `e.target`, `e.currentTarget`, `e.preventDefault()`, `e.stopPropagation()`.
+- Event delegation: attach one listener to a common ancestor and check `e.target` or `e.target.closest()` to handle many child elements efficiently.
+
+DOM lifecycle
+- `DOMContentLoaded` fires when the initial HTML is parsed (before images/styles finish loading):
+	`document.addEventListener('DOMContentLoaded', () => { /* init app */ })`.
+- `load` fires when all resources (images, stylesheets) are loaded: `window.addEventListener('load', ...)`.
+
+Performance tips
+- Minimize layout thrashing: avoid reading layout properties (like `offsetWidth`) immediately after writes.
+- Batch DOM updates: change classes or build elements in a fragment, then append once.
+- Cache selectors that are used repeatedly instead of querying the DOM every time.
+- Use `requestAnimationFrame()` for smooth visual updates and animations.
+
+Security & accessibility notes
+- Avoid inserting untrusted HTML via `innerHTML` — sanitize or use `textContent`.
+- Keep keyboard and screen-reader accessibility in mind: focus management, ARIA when necessary.
+
+Best practices
+- Prefer `querySelector`/`querySelectorAll` for flexible selection.
+- Use `addEventListener` and delegation for dynamic lists.
+- Keep DOM updates minimal and grouped.
+- Encapsulate DOM logic (small functions or modules) for maintainability.
+
+Small examples
+- Select and change text:
+	`const h = document.querySelector('h1'); h.textContent = 'Welcome';`
+- Create and append:
+	`const d = document.createElement('div'); d.classList.add('card'); d.textContent = 'Item'; document.body.appendChild(d);`
+- Event delegation example:
+	`document.querySelector('#list').addEventListener('click', e => { const item = e.target.closest('.item'); if (item) console.log('clicked', item.dataset.id); });`
+
+Further learning
+- Practice by manipulating small pages: toggle menus, create tabs, build small widgets.
+- Read MDN docs on the DOM for in-depth reference and examples.
+
