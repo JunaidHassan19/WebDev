@@ -20,3 +20,8 @@ console.log(h4.childElementCount); // 0
 console.log(h4.children); // HTMLCollection []
 console.log(h4.previousElementSibling); // <p>...</p>
 console.log(h4.nextElementSibling); // <p>...</p>
+
+let img = document.querySelector("#mainImg");
+console.log(img.previousElementSibling);
+
+img.previousElementSibling.style.color = "red";
