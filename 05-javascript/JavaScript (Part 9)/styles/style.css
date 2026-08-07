@@ -2,6 +2,14 @@ body {
   font-family: Arial;
 }
 
+.heading {
+  color: red;
+}
+
+.about {
+ color: green;
+ text-decoration: underline red wavy;
+}
 #mainImg {
   width: 35%;
 }
