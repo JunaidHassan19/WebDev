@@ -21,6 +21,7 @@ console.log(img.classList);
 let heading = document.querySelector("h1");
 console.log(heading.classList); // DOMTokenList(0) []
 
+// Adding classes to the element using classList.add()
 heading.classList.add("heading");
 console.log(heading.classList); // DOMTokenList(1) ['heading', value: 'heading']
 heading.classList.add("abc", "123");
@@ -29,5 +30,15 @@ console.log(heading.classList); // DOMTokenList(4) ['heading', 'abc', '123', va
 let about = document.querySelector("h2");
 about.classList.add("about");
 
+// contains() method to check if an element has a specific class
+console.log(heading.classList.contains("heading")); // true
+console.log(heading.classList.contains("abc")); // true
+console.log(heading.classList.contains("xyz")); // false
+
+// removing classes from the element using classList.remove()
 heading.classList.remove("heading");
 about.classList.remove("about");
+
+// toggle() method to add or remove a class based on its presence
+heading.classList.toggle("heading");
+about.classList.toggle("about");
