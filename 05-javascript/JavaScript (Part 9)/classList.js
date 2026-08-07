@@ -42,3 +42,6 @@ about.classList.remove("about");
 // toggle() method to add or remove a class based on its presence
 heading.classList.toggle("heading");
 about.classList.toggle("about");
+
+let box = document.querySelector(".box");
+box.classList.toggle("yellowBg");
