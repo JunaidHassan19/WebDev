@@ -28,3 +28,5 @@ div.appendChild(h1);
 let p2 = document.createElement("p");
 p2.innerText = "I'm also in a div";
 div.appendChild(p2);
+
+div.classList.add("box");
