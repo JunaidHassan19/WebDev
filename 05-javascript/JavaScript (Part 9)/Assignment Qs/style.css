@@ -10,3 +10,8 @@
   color: purple;
   text-decoration: underline;
 }
+
+.pStyle {
+  color: gray;
+  font-style: italic;
+}
