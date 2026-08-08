@@ -9,5 +9,9 @@ body.appendChild(input);
 body.appendChild(btn);
 
 // Qs 2;
+btn.setAttribute("id", "btn");
 input.setAttribute("placeholder", "username");
-btn.setApttribute("id", "btn");
+
+//Qs 3:
+let button = document.getElementById("btn");
+button.classList.add("btnStyle");
