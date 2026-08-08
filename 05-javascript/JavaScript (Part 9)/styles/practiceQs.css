@@ -5,3 +5,8 @@
 .blue {
   color: blue;
 }
+
+div{
+  border: solid black;
+  background-color: pink;
+}

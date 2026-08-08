@@ -14,3 +14,17 @@ h3.innerText = "hey i'm blue h3!";
 body.appendChild(h3);
 
 h3.classList.add("blue");
+
+// Qs 3
+let div = document.createElement("div");
+
+body.appendChild(div);
+
+let h1 = document.createElement("h1");
+h1.innerText = "I'm in a div";
+
+div.appendChild(h1);
+
+let p2 = document.createElement("p");
+p2.innerText = "I'm also in a div";
+div.appendChild(p2);
