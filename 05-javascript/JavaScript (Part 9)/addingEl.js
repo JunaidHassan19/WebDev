@@ -7,9 +7,8 @@ Adding Elements: We can add elements to the DOM using JavaScript. There are seve
 5. textContent: This property allows you to set or get the text content of an element. For example, element.textContent = 'New Text' replaces the text content of element with the specified text.
 */
 
-// appendChild();
 let newPara = document.createElement("p"); // Creates a new <p> element
-newPara.textContent = "Hello World"; // Sets the text content of the new <p> element
+newPara.textContent = "Hello World!."; // Sets the text content of the new <p> element
 
 let body = document.querySelector("body");
 body.appendChild(newPara); // Appends the new <p> element to the body of the document
@@ -21,3 +20,12 @@ let btn = document.createElement("button"); // Creates a new <button> element
 btn.innerText = "Click me!"; // Sets the text of the button
 
 box.appendChild(btn); // Appends the new <button> element to the element with class "box"
+
+// append();
+newPara.append(" This is new text using append after button"); // Appends text to the new <p> element after the button
+newPara.append(btn);
+newPara.append(" This is new text using append after button");
+
+// prepend();
+box.prepend("This is new text using prepend before button");
+// box.prepend(newPara);
