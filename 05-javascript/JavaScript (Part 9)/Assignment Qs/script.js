@@ -15,3 +15,10 @@ input.setAttribute("placeholder", "username");
 //Qs 3:
 let button = document.getElementById("btn");
 button.classList.add("btnStyle");
+
+// Qs4:
+
+let h1 = document.createElement("h1");
+h1.innerText = "DOM Practice";
+body.appendChild(h1);
+h1.classList.add("h1Style");

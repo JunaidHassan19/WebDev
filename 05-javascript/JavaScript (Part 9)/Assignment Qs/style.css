@@ -5,3 +5,8 @@
   padding: 10px 20px;
   cursor: pointer;
 }
+
+.h1Style {
+  color: purple;
+  text-decoration: underline;
+}
