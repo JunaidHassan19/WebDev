@@ -23,9 +23,19 @@ box.appendChild(btn); // Appends the new <button> element to the element with cl
 
 // append();
 newPara.append(" This is new text using append after button"); // Appends text to the new <p> element after the button
-newPara.append(btn);
-newPara.append(" This is new text using append after button");
+newPara.append(btn); // Appends the button to the new <p> element
+newPara.append(" This is new text using append after button"); // Appends text to the new <p> element after the button
 
 // prepend();
-box.prepend("This is new text using prepend before button");
+box.prepend("This is new text using prepend before button"); // Prepends text to the element with class "box" before the button
 // box.prepend(newPara);
+
+// insertAdjacentElement();
+let p = document.querySelector("p");
+let btn2 = document.createElement("button");
+btn2.innerText = "Click me!"; // Sets the text of the button
+
+p.insertAdjacentElement("beforebegin", btn2); // Inserts the new button before the <h2> element)
+p.insertAdjacentElement("afterbegin", btn2); // Inserts the new button after the <h2> element)
+p.insertAdjacentElement("beforeend", btn2); // Inserts the new button before the <p> element)
+p.insertAdjacentElement("afterend", btn2); // Inserts the new button after the <p> element)
