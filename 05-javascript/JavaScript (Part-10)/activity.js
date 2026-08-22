@@ -23,3 +23,10 @@ function updateHeadingColor() {
   h1.style.color = currentColor;
   h1.textContent = `Current Background Color: rgb(${r}, ${g}, ${b})`;
 }
+
+let input = document.querySelector("#text");
+let p = document.querySelector("#textP");
+
+input.addEventListener("input", function () {
+  p.innerText = input.value;
+});
