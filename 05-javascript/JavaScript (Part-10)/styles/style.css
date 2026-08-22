@@ -4,3 +4,22 @@ div{
   background-color: lightgray;
   border: 1px solid black;
 }
+form{
+  width: 600px;
+  height: 200px;
+  background-color: lightblue;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 50px;
+}
+form input{
+  width: 300px;
+  height: 30px;
+  margin-top: 50px;
+}
+
+form button{
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+}
