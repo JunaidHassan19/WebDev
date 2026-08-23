@@ -1,0 +1,33 @@
+Breakpoints are markers placed in JavaScript code during debugging.
+
+A breakpoint pauses the execution of the program at a specific line so that you can inspect:
+- the values of variables
+- the flow of code execution
+- the current state of the program
+- where the bug is occurring
+
+Why breakpoints are useful:
+- They help you understand how code runs step by step.
+- They let you stop execution before an error happens.
+- They help find logical mistakes in loops, conditions, and functions.
+
+How breakpoints work:
+1. Open the browser DevTools or VS Code debugger.
+2. Click on the line number where you want the code to stop.
+3. Run the program.
+4. Execution pauses at that line.
+5. You can inspect variables and continue step by step.
+
+Example:
+let a = 10;
+let b = 20;
+console.log(a + b); // breakpoint can be set here
+
+Common debugging actions after hitting a breakpoint:
+- Continue: run the rest of the code
+- Step over: move to the next line
+- Step into: go inside a function call
+- Step out: exit the current function
+- Restart: start debugging again
+
+In short, breakpoints are one of the most important tools in debugging because they let you pause and analyze code exactly where the problem occurs.
