@@ -1,0 +1,123 @@
+Accessing APIs: Examples and Uses
+=================================
+
+An API lets one application request data or services from another
+application. A website can use an API to show information without storing all
+of that information itself.
+
+When accessing an API, we usually provide an endpoint URL, send a request, and
+receive a response. Many web APIs return data in JSON format.
+
+Example 1: JSONPlaceholder API
+------------------------------
+
+Endpoint:
+    https://jsonplaceholder.typicode.com/users
+
+Uses:
+- Practice retrieving a list of users.
+- Display names, email addresses, and company information.
+- Learn how GET requests and JSON responses work.
+
+Another useful endpoint is:
+    https://jsonplaceholder.typicode.com/posts
+
+It can be used to practice reading posts, searching by a user ID, and testing
+POST, PUT, PATCH, and DELETE requests. It is a fake practice API, so data is
+not permanently stored.
+
+Example 2: Open-Meteo weather API
+---------------------------------
+
+Endpoint:
+    https://api.open-meteo.com/v1/forecast
+
+Uses:
+- Show the current temperature for a location.
+- Display wind speed and weather forecasts.
+- Build a weather dashboard or a city weather application.
+
+This API uses latitude and longitude query parameters. For example, the
+coordinates 28.61 and 77.21 can be used to request weather for New Delhi.
+Open-Meteo can be used without an API key for many non-commercial projects.
+
+Example 3: GitHub API
+---------------------
+
+Endpoint:
+    https://api.github.com/users/octocat
+
+Uses:
+- Show a user's name, profile photo, biography, and profile link.
+- Display the number of public repositories.
+- Create a GitHub profile search application.
+
+Other useful GitHub endpoints provide repositories, followers, issues, and
+commits. Public requests have rate limits, so the API documentation should be
+checked before building a large application.
+
+Example 4: REST Countries API
+-----------------------------
+
+Endpoint:
+    https://restcountries.com/v3.1/all
+
+Uses:
+- Display a list of countries and their flags.
+- Find capitals, regions, currencies, and languages.
+- Create a country search or travel information application.
+
+Example 5: Dog CEO API
+----------------------
+
+Endpoint:
+    https://dog.ceo/api/breeds/image/random
+
+Uses:
+- Display a random dog image.
+- Practice handling a simple JSON response.
+- Build a small image gallery or a beginner API project.
+
+Example 6: PokéAPI
+------------------
+
+Endpoint:
+    https://pokeapi.co/api/v2/pokemon/pikachu
+
+Uses:
+- Display a Pokemon's name, type, abilities, and image.
+- Create a Pokemon search application.
+- Practice using a value from a URL path as a search term.
+
+Free APIs for practice
+----------------------
+
+API                  Main use                         API key
+JSONPlaceholder      Fake users, posts, and todos     Not required
+Open-Meteo            Weather and forecasts            Not required
+GitHub                Public profiles and repositories Usually not required
+REST Countries        Country information and flags    Not required
+Dog CEO               Random dog images                Not required
+PokéAPI               Pokemon information              Not required
+DummyJSON             Products, carts, users, recipes Not required
+NASA Open APIs        Space images and astronomy data  Free key required
+Open Library          Books, authors, and editions     Not required
+
+How to choose an API
+--------------------
+
+- Choose JSONPlaceholder for learning basic requests.
+- Choose Open-Meteo for a weather project.
+- Choose REST Countries for a search and filtering project.
+- Choose GitHub for profiles and repository data.
+- Choose Dog CEO or PokéAPI for a fun beginner project.
+- Read the official documentation for endpoints, limits, and permissions.
+
+Important points
+----------------
+
+- Check whether the API requires an API key or an account.
+- Check the API's rate limits before sending many requests.
+- Check the response status before using the returned data.
+- Do not expose private API keys or passwords in frontend files.
+- Follow the API's terms of service and use its data responsibly.
