@@ -1,0 +1,103 @@
+API (Application Programming Interface)
+========================================
+
+An API is a set of rules that allows two software applications to communicate
+with each other. A web API usually allows a client, such as a browser, to
+request data from a server.
+
+Example:
+	A weather application sends a city name to a weather API. The API sends
+	back temperature, humidity, and other weather data.
+
+Important API terms
+-------------------
+
+1. Endpoint
+   The URL where a particular API resource is available.
+   Example: https://api.example.com/users
+
+2. Request
+   The message sent by the client to the server.
+
+3. Response
+   The data returned by the server.
+
+4. JSON
+   A common text format used to send data between a client and a server.
+   Example:
+	   {
+		 "name": "junni",
+		 "age": 21
+	   }
+
+HTTP methods
+------------
+
+GET     Retrieve data
+POST    Create new data
+PUT     Replace existing data
+PATCH   Update part of existing data
+DELETE  Remove data
+
+Using fetch()
+-------------
+
+The fetch() function is used to make network requests. It returns a Promise.
+
+	async function getUsers() {
+		try {
+			const response = await fetch("https://api.example.com/users");
+
+			if (!response.ok) {
+				throw new Error(`HTTP error: ${response.status}`);
+			}
+
+			const users = await response.json();
+			console.log(users);
+		} catch (error) {
+			console.log("Unable to fetch users:", error.message);
+		}
+	}
+
+	getUsers();
+
+response.json() also returns a Promise, so await is used to convert the JSON
+response into a JavaScript object.
+
+Sending data with POST
+----------------------
+
+	async function createUser() {
+		const user = { name: "Aman", age: 21 };
+
+		const response = await fetch("https://api.example.com/users", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json"
+			},
+			body: JSON.stringify(user)
+		});
+
+		const result = await response.json();
+		console.log(result);
+	}
+
+Status codes
+------------
+
+200-299  Success
+400      Bad request
+401      Unauthorized
+403      Forbidden
+404      Resource not found
+500      Server error
+
+Important points
+----------------
+
+- Always check response.ok because fetch() does not reject automatically for
+  HTTP errors such as 404 or 500.
+- Use try/catch to handle network errors and failed requests.
+- Never expose private API keys in frontend code.
+- Read an API's documentation to learn its endpoints, parameters, headers,
+  authentication rules, and response format.
