@@ -1,0 +1,110 @@
+HTTP Status Codes
+=================
+
+HTTP status codes are numbers sent by a server in response to a client request.
+They help us understand whether the request was successful, failed, or needs
+more action.
+
+HTTP status codes are grouped into categories:
+
+1xx - Informational
+-------------------
+
+100 Continue
+- The server has received the request headers and the client can continue.
+
+101 Switching Protocols
+- The server is switching to a different protocol.
+
+2xx - Success
+-------------
+
+200 OK
+- The request was successful.
+- This is the most common success status.
+
+201 Created
+- A new resource was successfully created.
+
+204 No Content
+- The request succeeded but there is no content to return.
+
+3xx - Redirection
+------------------
+
+301 Moved Permanently
+- The resource has moved permanently to another URL.
+
+302 Found
+- The resource is temporarily at a different URL.
+
+304 Not Modified
+- The resource has not changed since the last request.
+
+4xx - Client Errors
+--------------------
+
+400 Bad Request
+- The request is invalid or badly formed.
+
+401 Unauthorized
+- The client is not authenticated or is missing valid credentials.
+
+403 Forbidden
+- The client is authenticated but is not allowed to access the resource.
+
+404 Not Found
+- The requested resource does not exist.
+
+405 Method Not Allowed
+- The HTTP method is not allowed for this endpoint.
+
+422 Unprocessable Entity
+- The server understood the request but could not process the data.
+
+5xx - Server Errors
+--------------------
+
+500 Internal Server Error
+- The server has encountered an unexpected error.
+
+502 Bad Gateway
+- The server received an invalid response from another server.
+
+503 Service Unavailable
+- The server is temporarily unavailable.
+
+504 Gateway Timeout
+- The server did not receive a response in time from another server.
+
+Why status codes matter
+-----------------------
+
+- They tell us whether the request succeeded.
+- They help in debugging API calls.
+- They help developers handle different outcomes in code.
+- They are important when building frontend applications.
+
+Example in API usage
+--------------------
+
+- 200 OK --> data received successfully
+- 201 Created --> new item created successfully
+- 404 Not Found --> page or resource not available
+- 401 Unauthorized --> login required
+- 500 Internal Server Error --> server problem
+
+Important points
+----------------
+
+- 2xx means success.
+- 4xx means client-side problem.
+- 5xx means server-side problem.
+- Always check the status code when working with APIs.
+
+Summary
+-------
+
+HTTP status codes tell us the result of a request. They help developers
+understand whether the request succeeded, failed, or needs user action.
+They are very important when working with APIs and web applications.
