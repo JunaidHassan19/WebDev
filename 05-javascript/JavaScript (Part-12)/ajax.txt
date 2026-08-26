@@ -1,0 +1,78 @@
+AJAX
+====
+
+AJAX stands for Asynchronous JavaScript and XML.
+It is a technique used in web development to send and receive data from a
+server without reloading the whole webpage.
+
+This means the user can continue using the page while data is being loaded in
+the background.
+
+Why AJAX is important
+---------------------
+
+- It makes websites faster and more interactive.
+- It updates only a part of the page instead of reloading the whole page.
+- It is used in live search, chat apps, notifications, forms, and dashboards.
+- It improves user experience.
+
+How AJAX works
+--------------
+
+1. The browser sends a request to the server.
+2. The server processes the request.
+3. The response is returned in the background.
+4. JavaScript updates the webpage without a full page refresh.
+
+Example use cases
+-----------------
+
+- Search suggestions while typing in a search box.
+- Loading more data when a user scrolls down.
+- Sending form data without leaving the page.
+- Fetching weather, user, or product data from an API.
+
+AJAX with fetch()
+-----------------
+
+Modern JavaScript commonly uses fetch() instead of the older XMLHttpRequest.
+fetch() is an easier way to make AJAX requests.
+
+AJAX request is asynchronous, which means the program does not wait for the
+server response before continuing other work.
+
+AJAX and APIs
+-------------
+
+AJAX is often used to call APIs.
+For example, a website may request user details or products from an API and
+then display them on the page without reloading.
+
+Advantages of AJAX
+------------------
+
+- Faster user interaction
+- Better performance
+- Dynamic page updates
+- Reduced bandwidth usage
+
+Disadvantages of AJAX
+---------------------
+
+- More complex code
+- Requires error handling
+- Can be harder to debug
+- Security issues if not handled properly
+
+Basic idea
+----------
+
+AJAX allows the browser to communicate with the server in the background.
+This is what makes modern web apps feel smooth and responsive.
+
+Summary
+-------
+
+AJAX is a powerful web technology that allows parts of a webpage to update
+without reloading the entire page. It is widely used in modern applications
+for live data, forms, search, and API communication.
