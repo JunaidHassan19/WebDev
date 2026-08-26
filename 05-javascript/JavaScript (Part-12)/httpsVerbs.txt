@@ -1,0 +1,113 @@
+HTTP Verbs (HTTP Methods)
+=========================
+
+HTTP verbs are request methods used by the client to tell the server what
+kind of action is required.
+
+These methods are commonly used in APIs when sending requests to a server.
+
+1. GET
+------
+
+Purpose:
+- Used to fetch or read data.
+- It does not change the data on the server.
+
+Example:
+- Get a list of users
+- Get a product by ID
+- Get weather information
+
+Common use:
+- Reading data from an API
+
+2. POST
+--------
+
+Purpose:
+- Used to create a new resource or send data to the server.
+- It usually sends data in the request body.
+
+Example:
+- Create a new user
+- Submit a form
+- Add a new post
+
+Common use:
+- Creating data in an API
+
+3. PUT
+-------
+
+Purpose:
+- Used to update or replace an existing resource completely.
+- It sends the full updated data.
+
+Example:
+- Replace a user profile
+- Update full product details
+
+Common use:
+- Full update of existing data
+
+4. PATCH
+---------
+
+Purpose:
+- Used to update only part of an existing resource.
+- It changes only specific fields.
+
+Example:
+- Change only the email address of a user
+- Update only the price of a product
+
+Common use:
+- Partial update of existing data
+
+5. DELETE
+----------
+
+Purpose:
+- Used to remove a resource from the server.
+
+Example:
+- Delete a user
+- Delete a product
+- Delete a post
+
+Common use:
+- Removing data from an API
+
+Quick comparison
+-----------------
+
+GET     -> Read data
+POST    -> Create new data
+PUT     -> Replace/Update full data
+PATCH   -> Update partial data
+DELETE  -> Remove data
+
+Example in API terms
+--------------------
+
+- GET /users          -> get all users
+- GET /users/1        -> get user with ID 1
+- POST /users         -> create a new user
+- PUT /users/1        -> replace user 1 completely
+- PATCH /users/1      -> update only some fields of user 1
+- DELETE /users/1     -> delete user 1
+
+Important notes
+---------------
+
+- GET requests are usually safe and read-only.
+- POST, PUT, PATCH, and DELETE modify server data.
+- API documentation tells which method should be used for each operation.
+- The correct HTTP verb is important for working with APIs.
+
+Summary
+-------
+
+HTTP verbs define the type of action a client wants to perform on a server.
+They are essential in API communication and web development. The most common
+verbs are GET, POST, PUT, PATCH, and DELETE.
