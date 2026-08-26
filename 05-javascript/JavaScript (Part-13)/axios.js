@@ -1,5 +1,5 @@
-let btn = document.querySelector("button");
-let p = document.querySelector("p");
+let btn = document.querySelector("#btn");
+let p = document.querySelector("#res");
 
 btn.addEventListener("click", async () => {
   let fact = await getFacts();
