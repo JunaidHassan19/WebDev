@@ -1,0 +1,161 @@
+JSON (JavaScript Object Notation)
+=================================
+
+JSON is a lightweight format used to store and exchange data.
+It is easy for humans to read and easy for machines to parse.
+JSON is widely used in web development, especially when working with APIs.
+
+Why JSON is used
+----------------
+
+- It is a standard way to send data between a server and a browser.
+- It is simple and readable.
+- It works well with JavaScript.
+- It is supported by many programming languages.
+
+JSON syntax rules
+------------------
+
+- JSON data is written in key-value pairs.
+- Keys must be strings and are wrapped in double quotes.
+- Values can be strings, numbers, booleans, arrays, objects, or null.
+- Curly braces {} represent objects.
+- Square brackets [] represent arrays.
+- Each pair is separated by a comma.
+
+Example of JSON object
+----------------------
+
+{
+  "name": "Junni",
+  "age": 21,
+  "city": "Shopian",
+  "isStudent": true,
+  "skills": ["HTML", "CSS", "JavaScript"]
+}
+
+This JSON object contains:
+- a string value for name
+- a number value for age
+- a string value for city
+- a boolean value for isStudent
+- an array of strings for skills
+
+JSON vs JavaScript object
+-------------------------
+
+A JavaScript object looks similar to JSON, but there are a few differences:
+
+- In JSON, keys must always be in double quotes.
+- In JavaScript object literals, quotes are optional for keys.
+- JSON cannot contain functions or comments.
+
+JavaScript object example:
+
+const student = {
+  name: "Junni",
+  age: 21,
+  city: "Shopian"
+};
+
+JSON example:
+
+{
+  "name": "Junni",
+  "age": 21,
+  "city": "shopian"
+}
+
+JSON data types
+---------------
+
+1. String
+   "Hello"
+
+2. Number
+   42
+
+3. Boolean
+   true or false
+
+4. Array
+   [1, 2, 3]
+
+5. Object
+   { "name": "Junni" }
+
+6. Null
+   null
+
+JSON arrays
+-----------
+
+Arrays are used to store multiple values.
+
+[
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React"
+]
+
+Nested JSON
+-----------
+
+JSON can contain objects inside objects and arrays inside objects.
+
+{
+  "student": {
+    "name": "Junni",
+    "age": 21,
+    "address": {
+      "city": "shopian",
+      "state": "shopian"
+    }
+  }
+}
+
+Using JSON in JavaScript
+------------------------
+
+JavaScript can convert JSON text into objects using JSON.parse().
+
+const jsonText = '{"name":"Junni","age":21}';
+const obj = JSON.parse(jsonText);
+console.log(obj.name);
+
+JavaScript can convert an object into JSON using JSON.stringify().
+
+const student = { name: "Junni", age: 21 };
+const jsonText = JSON.stringify(student);
+console.log(jsonText);
+
+JSON in APIs
+------------
+
+APIs commonly send and receive data in JSON format.
+Example of API response:
+
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "email": "leanne@example.com"
+}
+
+This makes it easy for frontend applications to display data dynamically.
+
+Important points
+----------------
+
+- JSON is used to store and exchange data.
+- JSON is text-based and language-independent.
+- JSON is commonly used in APIs and web apps.
+- JSON keys must be in double quotes.
+- JSON data is easy to parse and use in JavaScript.
+
+Summary
+-------
+
+JSON stands for JavaScript Object Notation. It is a popular format for
+sending and receiving structured data. It is easy to read, simple to use,
+and important in modern web development and API communication.
