@@ -35,6 +35,7 @@
 - [Tools Used](#tools-used)
 - [Resources](#resources)
 - [Learning Path](#learning-path)
+- [Author](#author)
 
 ---
 
@@ -208,10 +209,13 @@ async function getData(url) {
 
 ## Resources
 
-- [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
-- [MDN DOM Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
-- [MDN Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-- [JavaScript.info](https://javascript.info/)
+Here are the resources that helped me learn:
+
+| Resource                    | Description                       |                               Link                                |
+| :-------------------------- | :-------------------------------- | :---------------------------------------------------------------: |
+| **Apna College Sigma 11.0** | The primary source of my learning | [Visit](https://www.apnacollege.in/path-player?courseid=sigma-11) |
+| **MDN Web Docs**            | Best resource for web development | [Visit](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  |
+| **JavaScript.info**         | Modern JavaScript tutorial        |                 [Visit](https://javascript.info/)                 |
 
 ---
 
@@ -229,3 +233,41 @@ Fundamentals
 ```
 
 This progression builds from language fundamentals toward interactive, data-driven web applications.
+
+---
+
+## Author
+
+<div align="center">
+
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/JunaidHassan19">
+          <img src="https://avatars.githubusercontent.com/u/123434178?v=4" width="100" style="border-radius: 50%;" alt="Junaid Hassan"/>
+          <br>
+          <sub><strong>Junaid Hassan</strong></sub>
+        </a>
+        <br>
+        <sub>🌐 Web Developer in Training</sub>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+[![GitHub](https://img.shields.io/badge/GitHub-@JunaidHassan19-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JunaidHassan19)
+
+<sub>⭐ Star this repository if you find it helpful!</sub>
+
+</div>
+
+---
+
+<div align="center">
+
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F7DF1E,50:F0DB4F,100:F7DF1E&height=100&section=footer" alt="Footer Banner" />
+
+<sub><i>Built with ⚡ and lots of <code>{ }</code></i></sub>
+
+</div>
