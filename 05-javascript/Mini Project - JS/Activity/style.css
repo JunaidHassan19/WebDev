@@ -1,0 +1,136 @@
+
+:root {
+	color-scheme: light;
+	font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+	color: #263238;
+	background: #f3f1ed;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: min(100% - 2rem, 38rem);
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 6rem 0 3rem;
+}
+
+h1 {
+	margin: 0 0 1.75rem;
+	color: #1f292d;
+	font-size: clamp(2rem, 6vw, 3rem);
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+input {
+	width: calc(100% - 8.5rem);
+	min-height: 3rem;
+	padding: 0.75rem 1rem;
+	border: 1px solid #c8c5be;
+	border-radius: 0.5rem;
+	outline: none;
+	background: #fffdfa;
+	color: #263238;
+	font: inherit;
+	font-size: 1rem;
+	transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+input::placeholder {
+	color: #8b8d87;
+}
+
+input:focus {
+	border-color: #557c82;
+	box-shadow: 0 0 0 3px rgba(85, 124, 130, 0.16);
+}
+
+body > button {
+	min-height: 3rem;
+	margin-left: 0.5rem;
+	padding: 0.75rem 1rem;
+	border: 0;
+	border-radius: 0.5rem;
+	background: #355f66;
+	color: #fffdfa;
+	cursor: pointer;
+	font: inherit;
+	font-weight: 700;
+	transition: background 160ms ease, transform 160ms ease;
+}
+
+body > button:hover {
+	background: #284d53;
+}
+
+body > button:active {
+	transform: translateY(1px);
+}
+
+body > button:focus-visible,
+.delete:focus-visible {
+	outline: 3px solid rgba(85, 124, 130, 0.35);
+	outline-offset: 2px;
+}
+
+ul {
+	display: grid;
+	gap: 0.75rem;
+	margin: 2rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	min-height: 3.25rem;
+	padding: 0.75rem 0.75rem 0.75rem 1rem;
+	border: 1px solid #ddd9d1;
+	border-radius: 0.5rem;
+	background: #fffdfa;
+	box-shadow: 0 5px 16px rgba(47, 52, 48, 0.05);
+	overflow-wrap: anywhere;
+}
+
+.delete {
+	flex: 0 0 auto;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	border: 1px solid #d8b8b1;
+	border-radius: 50%;
+	background: transparent;
+	color: #a05249;
+	cursor: pointer;
+	font: inherit;
+	font-size: 0.8rem;
+	font-weight: 700;
+	line-height: 1;
+	transition: background 160ms ease, color 160ms ease;
+}
+
+.delete:hover {
+	background: #a05249;
+	color: #fffdfa;
+}
+
+@media (max-width: 30rem) {
+	body {
+		padding-top: 3rem;
+	}
+
+	input {
+		width: 100%;
+	}
+
+	body > button {
+		width: 100%;
+		margin: 0.75rem 0 0;
+	}
+}
