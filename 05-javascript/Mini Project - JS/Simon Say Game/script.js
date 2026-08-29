@@ -33,3 +33,13 @@ function levelUp() {
   let rendBtn = document.querySelector(`.${randColor}`);
   btnFlash(rendBtn);
 }
+
+function btnPress() {
+  let btn = this;
+  btnFlash(btn);
+}
+
+let allBtns = document.querySelectorAll(".btn");
+for (btn of allBtns) {
+  btn.addEventListener("click", btnPress);
+}
