@@ -50,8 +50,13 @@ function checkAns(idx) {
       setTimeout(levelUp, 1000);
     }
   } else {
-    h2.innerText = "Game Over, Press Any Key to Restart";
+    h2.innerHTML = `Game Over! Your Score: <br>${level} <br> Press Any Key to Restart`;
+    document.querySelector("body").style.backgroundColor = "red";
+    setTimeout(function () {
+      document.querySelector("body").style.backgroundColor = "white";
+    }, 150);
     reset();
+    highScore();
   }
 }
 
