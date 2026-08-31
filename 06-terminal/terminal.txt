@@ -1,0 +1,143 @@
+Terminal Basics
+
+A terminal is a text-based interface used to interact with the computer or operating system. It allows you to run commands, manage files, install software, and work with projects without using a graphical interface.
+
+Different terms related to the terminal:
+
+1. Command Prompt / Shell
+   - A command-line environment that accepts text commands.
+   - Examples: Bash, Zsh, PowerShell, CMD.
+
+2. Terminal
+   - The application window where you type commands.
+   - It connects you to the command-line interface.
+
+3. Command
+   - A instruction typed into the terminal to perform a task.
+   - Example: ls, cd, pwd, mkdir.
+
+4. Directory
+   - A folder in the file system.
+
+5. Working Directory
+   - The current folder where terminal commands are being executed.
+
+6. Path
+   - The location of a file or folder in the system.
+   - Example: C:\Users\Name\project
+
+7. Root Directory
+   - The top-level folder in the file system.
+   - In Linux/macOS it is / ; in Windows it may be C:\.
+
+8. Relative Path
+   - A path that is relative to the current directory.
+   - Example: ./project or ../folder
+
+9. Absolute Path
+   - A full path from the root to the file or folder.
+   - Example: /home/user/project
+
+10. CLI (Command Line Interface)
+   - A way of interacting with a computer by typing commands instead of using a GUI.
+
+11. Bash
+   - A popular Unix shell used in many terminals.
+
+12. PowerShell
+   - A shell used mainly on Windows systems.
+
+13. Terminal Output
+   - The text result returned after running a command.
+
+14. Arguments
+   - Extra information passed to a command.
+   - Example: ls -l
+
+15. Flags / Options
+   - Symbols that change the behavior of a command.
+   - Example: -l, -a, -h
+
+Basic terminal commands:
+
+1. pwd
+   - Print the current working directory.
+
+2. ls
+   - List files and folders in the current directory.
+
+3. ls -a
+   - List all files including hidden ones.
+
+4. cd foldername
+   - Change into a folder.
+
+5. cd ..
+   - Go back to the parent directory.
+
+6. mkdir foldername
+   - Create a new directory.
+
+7. touch filename.txt
+   - Create a new empty file (Linux/macOS).
+
+8. type nul > filename.txt
+   - Create a new empty file (Windows PowerShell or cmd).
+
+9. rm filename.txt
+   - Delete a file.
+
+10. rmdir foldername
+   - Remove an empty directory.
+
+11. clear
+   - Clear the terminal screen.
+
+12. echo "text"
+   - Print text to the terminal.
+
+13. cp source.txt destination.txt
+   - Copy a file.
+
+14. mv oldname.txt newname.txt
+   - Move or rename a file.
+
+15. cat filename.txt
+   - Show the contents of a file.
+
+16. man command
+   - Show help or documentation for a command.
+
+17. help
+   - Display help information in some shells.
+
+18. git status
+   - Check the status of a Git repository.
+
+19. git init
+   - Initialize a new Git repository.
+
+20. npm install
+   - Install project dependencies.
+
+21. node filename.js
+   - Run a JavaScript file using Node.js.
+
+Why terminal is important?
+- It helps developers manage files faster.
+- It is used for Git, Node.js, package installation, and server commands.
+- It is essential for backend development, automation, and debugging.
+
+Quick example:
+
+pwd
+ls
+cd project
+mkdir test
+cd test
+pwd
+
+This sequence shows how to check the current folder, list contents, move into a directory, create a new folder, and confirm the working location.
+
+Summary:
+The terminal is a powerful tool for working efficiently with the computer. Learning common commands helps you navigate files, run programs, and manage projects more effectively.
