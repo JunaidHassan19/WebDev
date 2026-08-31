@@ -59,22 +59,27 @@ This folder contains my complete **JavaScript learning journey**. It begins with
 ```
 05-javascript/
 │
-├── JavaScript (Part 1)/    -> Variables, data types, operators, and strings
-├── JavaScript (Part 2)/    -> Conditions, logical operators, alerts, and prompts
-├── JavaScript (Part 3)/    -> Arrays, strings, methods, and method chaining
-├── JavaScript (Part 4)/    -> Loops, nested loops, and mini-projects
-├── JavaScript (Part 5)/    -> Objects, Math, random values, and object practice
-├── JavaScript (Part 6)/    -> Functions, scope, methods, and higher-order functions
-├── JavaScript (Part 7)/    -> Arrow functions, timers, this, and error handling
-├── JavaScript (Part 8)/    -> forEach, map, filter, reduce, spread, and rest
-├── JavaScript (Part 9)/    -> DOM selection, manipulation, attributes, and styles
-├── JavaScript (Part-10)/    -> Mouse, keyboard, form, and DOM events
-├── JavaScript (Part-11)/    -> Call stack, callbacks, promises, and promise chaining
-├── JavaScript (Part-12)/    -> AJAX, JSON, Fetch, async/await, and status codes
-└── JavaScript (Part-13)/    -> Axios and API-based activities
+├── JavaScript (Part 1)/        -> Variables, data types, operators, and strings
+├── JavaScript (Part 2)/        -> Conditions, logical operators, alerts, and prompts
+├── JavaScript (Part 3)/        -> Arrays, strings, methods, and method chaining
+├── JavaScript (Part 4)/        -> Loops, nested loops, and mini-projects
+├── JavaScript (Part 5)/        -> Objects, Math, random values, and object practice
+├── JavaScript (Part 6)/        -> Functions, scope, methods, and higher-order functions
+├── JavaScript (Part 7)/        -> Arrow functions, timers, this, and error handling
+├── JavaScript (Part 8)/        -> forEach, map, filter, reduce, spread, and rest
+├── JavaScript (Part 9)/        -> DOM selection, manipulation, attributes, and styles
+├── JavaScript (Part-10)/       -> Mouse, keyboard, form, and DOM events
+├── JavaScript (Part-11)/       -> Call stack, callbacks, promises, and promise chaining
+├── JavaScript (Part-12)/       -> AJAX, JSON, Fetch, async/await, and status codes
+├── JavaScript (Part-13)/       -> Axios and API-based activities
+├── Mini Project - JS/          -> Interactive mini-projects and UI activities
+│   ├── Activity/               -> Todo app and small DOM practice project
+│   ├── Event Bubbling/         -> Event propagation and bubbling experiments
+│   └── Simon Say Game/         -> Memory and pattern-based Simon game
+└── README.md                   -> JavaScript learning overview
 ```
 
-Most parts also include `html/`, `Assignment Qs/`, and practice files. Parts 4 and 5 contain mini-projects, while Parts 9 and 10 include supporting styles and assets for DOM activities.
+Most parts also include `html/`, `Assignment Qs/`, and practice files. The new Mini Project - JS folder includes real UI-based exercises such as the todo activity, event bubbling practice, and the Simon Says memory game. Parts 9 and 10 still contain supporting styles and assets for DOM activities.
 
 ---
 
@@ -187,10 +192,14 @@ async function getData(url) {
 
 - Conditional statement and operator assignments in Part 2
 - Array and string exercises in Part 3
-- Loop assignments and a todo mini-project in Part 4
-- Object assignment and mini-project in Part 5
+- Loop assignments and activity-based JavaScript logic in Part 4
+- Object assignment and mini-project work in Part 5
 - DOM practice and assignment pages in Part 9
 - Browser event activities in Part 10
+- Interactive project work in the Mini Project - JS folder:
+  - Todo activity
+  - Event Bubbling challenge
+  - Simon Says game
 - API and Axios activities in Parts 12-13
 
 ---
