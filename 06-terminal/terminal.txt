@@ -13,7 +13,7 @@ Different terms related to the terminal:
    - It connects you to the command-line interface.
 
 3. Command
-   - A instruction typed into the terminal to perform a task.
+   - An instruction typed into the terminal to perform a task.
    - Example: ls, cd, pwd, mkdir.
 
 4. Directory
@@ -58,6 +58,86 @@ Different terms related to the terminal:
    - Symbols that change the behavior of a command.
    - Example: -l, -a, -h
 
+Navigation commands and paths:
+
+1. pwd
+   - Prints the current working directory.
+
+2. ls
+   - Lists files and folders in the current directory.
+
+3. ls -l
+   - Lists files in long format, showing extra details.
+
+4. ls -a
+   - Lists all files including hidden ones.
+
+5. cd foldername
+   - Changes into a folder.
+
+6. cd ..
+   - Goes back to the parent directory.
+
+7. cd /
+   - Goes to the root directory.
+
+8. cd ~
+   - Goes to the home directory.
+
+9. ./foldername
+   - Refers to a folder or file in the current directory.
+
+10. ../foldername
+   - Refers to a folder or file in the parent directory.
+
+11. clear
+   - Clears the terminal screen.
+
+Making directories:
+
+1. mkdir foldername
+   - Creates a new directory.
+
+2. mkdir folder1 folder2
+   - Creates multiple directories at once.
+
+3. mkdir -p folder/subfolder
+   - Creates nested directories automatically.
+
+4. rmdir foldername
+   - Removes an empty directory.
+
+5. rm -r foldername
+   - Removes a directory and everything inside it (be careful).
+
+Touch command:
+
+1. touch filename.txt
+   - Creates a new empty file.
+
+2. touch file1.txt file2.txt
+   - Creates multiple new files at once.
+
+3. touch -t 202401010101 file.txt
+   - Changes the timestamp of a file.
+
+Deleting files and folders:
+
+1. rm filename.txt
+   - Deletes a file.
+
+2. rm -rf foldername
+   - Deletes a folder and its contents without asking for confirmation.
+
+3. del filename.txt
+   - Deletes a file in Windows Command Prompt.
+
+4. Remove-Item filename.txt
+   - Deletes a file in PowerShell.
+
+5. Remove-Item -Recurse foldername
+   - Deletes a folder and everything inside it in PowerShell.
+
 Basic terminal commands:
 
 1. pwd
@@ -66,8 +146,8 @@ Basic terminal commands:
 2. ls
    - List files and folders in the current directory.
 
-3. ls -a
-   - List all files including hidden ones.
+3. mkdir foldername
+   - Create a new directory.
 
 4. cd foldername
    - Change into a folder.
@@ -75,53 +155,64 @@ Basic terminal commands:
 5. cd ..
    - Go back to the parent directory.
 
-6. mkdir foldername
-   - Create a new directory.
-
-7. touch filename.txt
+6. touch filename.txt
    - Create a new empty file (Linux/macOS).
 
-8. type nul > filename.txt
-   - Create a new empty file (Windows PowerShell or cmd).
+7. type nul > filename.txt
+   - Create a new empty file (Windows Command Prompt).
 
-9. rm filename.txt
+8. rm filename.txt
    - Delete a file.
 
-10. rmdir foldername
+9. rmdir foldername
    - Remove an empty directory.
 
-11. clear
+10. clear
    - Clear the terminal screen.
 
-12. echo "text"
+11. echo "text"
    - Print text to the terminal.
 
-13. cp source.txt destination.txt
+12. cp source.txt destination.txt
    - Copy a file.
 
-14. mv oldname.txt newname.txt
+13. mv oldname.txt newname.txt
    - Move or rename a file.
 
-15. cat filename.txt
+14. cat filename.txt
    - Show the contents of a file.
 
-16. man command
+15. man command
    - Show help or documentation for a command.
 
-17. help
+16. help
    - Display help information in some shells.
 
-18. git status
+17. git status
    - Check the status of a Git repository.
 
-19. git init
+18. git init
    - Initialize a new Git repository.
 
-20. npm install
+19. npm install
    - Install project dependencies.
 
-21. node filename.js
+20. node filename.js
    - Run a JavaScript file using Node.js.
+
+What are flags?
+
+Flags are extra options added to commands to change their behavior. They usually start with a - sign.
+
+Examples:
+- ls -l -> shows detailed file information
+- ls -a -> shows hidden files
+- rm -r folder -> deletes a folder and its contents
+- mkdir -p folder/subfolder -> creates nested folders automatically
+
+Important note:
+- Flags are useful because they give more control over a command.
+- They can change how a command works or what information it shows.
 
 Why terminal is important?
 - It helps developers manage files faster.
@@ -140,4 +231,4 @@ pwd
 This sequence shows how to check the current folder, list contents, move into a directory, create a new folder, and confirm the working location.
 
 Summary:
-The terminal is a powerful tool for working efficiently with the computer. Learning common commands helps you navigate files, run programs, and manage projects more effectively.
+The terminal is a powerful tool for working efficiently with the computer. Learning navigation commands, paths, directory creation, flags, and deletion commands will help you manage files and folders more confidently.
