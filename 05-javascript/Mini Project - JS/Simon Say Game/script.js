@@ -56,7 +56,6 @@ function checkAns(idx) {
       document.querySelector("body").style.backgroundColor = "white";
     }, 150);
     reset();
-    highScore();
   }
 }
 
