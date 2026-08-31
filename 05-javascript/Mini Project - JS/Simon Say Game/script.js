@@ -51,7 +51,15 @@ function checkAns(idx) {
     }
   } else {
     h2.innerText = "Game Over, Press Any Key to Restart";
+    reset();
   }
+}
+
+function reset() {
+  level = 0;
+  gameSeq = [];
+  userSeq = [];
+  started = false;
 }
 
 function btnPress() {
