@@ -372,10 +372,38 @@ The terminal is important because it:
 
 ---
 
+## Author
+
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3B82F6,50:60A5FA,100:2563EB&height=80&section=footer" alt="Footer Banner" />
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/JunaidHassan19">
+          <img src="https://avatars.githubusercontent.com/u/123434178?v=4" width="100" style="border-radius: 50%;" alt="Junaid Hassan"/>
+          <br>
+          <sub><strong>Junaid Hassan</strong></sub>
+        </a>
+        <br>
+        <sub>🌐 Web Developer in Training</sub>
+      </td>
+    </tr>
+  </table>
 
-<sub><i>Built for learning the command line with clarity and confidence.</i></sub>
+  <br>
+
+[![GitHub](https://img.shields.io/badge/GitHub-@JunaidHassan19-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JunaidHassan19)
+
+<sub>⭐ Star this repository if you find it helpful!</sub>
+
+</div>
+
+---
+
+<div align="center">
+
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3B82F6,50:60A5FA,100:2563EB&height=100&section=footer" alt="Footer Banner" />
+
+<sub><i>Built with ⚡ and lots of <code>{ }</code></i></sub>
 
 </div>
