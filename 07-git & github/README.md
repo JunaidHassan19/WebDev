@@ -1,7 +1,7 @@
 <div align="center">
 
-  <!-- Animated Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22C55E,50:10B981,100:15803D&height=180&section=header&text=Git%20%26%20GitHub%20Learning&fontSize=48&fontColor=FFFFFF&fontAlignY=35&desc=Version%20Control%20%26%20Collaboration%20for%20Developers&descAlignY=55&descSize=18&animation=scaleIn" alt="Git and GitHub Banner" />
+  <!-- Local animated SVG header -->
+  <img src="./git-github-header.svg" alt="Git and GitHub Banner" width="1000" />
 
   <!-- Git/GitHub Badges -->
   <img src="https://img.shields.io/badge/Git-Version%20Control-brightgreen?style=for-the-badge" alt="Git" />

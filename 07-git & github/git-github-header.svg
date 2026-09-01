@@ -1,0 +1,38 @@
+<svg width="1200" height="220" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E"/>
+      <stop offset="0.5" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#15803D"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="180" y1="0" x2="1040" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="rgba(255,255,255,0.35)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0.05)"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#052E16" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .title { font: 700 46px 'Segoe UI', Arial, sans-serif; fill: white; letter-spacing: 1px; }
+      .subtitle { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: rgba(255,255,255,0.9); letter-spacing: 1.2px; }
+      .wave { animation: drift 5s ease-in-out infinite alternate; transform-origin: center; }
+      @keyframes drift {
+        0% { transform: translateX(-15px); }
+        100% { transform: translateX(15px); }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="220" rx="28" fill="url(#bg)"/>
+  <rect x="18" y="18" width="1164" height="184" rx="22" fill="url(#shine)" opacity="0.3"/>
+
+  <g class="wave">
+    <path d="M0 155C90 120 120 120 220 150C320 180 380 180 500 140C620 100 740 95 840 135C930 170 1050 170 1200 120V220H0V155Z" fill="rgba(255,255,255,0.12)"/>
+    <path d="M0 170C110 135 170 130 270 155C370 180 470 175 560 150C670 120 760 110 860 145C980 185 1075 195 1200 160V220H0V170Z" fill="rgba(255,255,255,0.18)"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <text x="600" y="96" text-anchor="middle" class="title">Git &amp; GitHub Learning</text>
+    <text x="600" y="130" text-anchor="middle" class="subtitle">Version Control &amp; Collaboration for Developers</text>
+  </g>
+</svg>
