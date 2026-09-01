@@ -1,0 +1,135 @@
+Git and GitHub
+
+Git is a version control system used to track changes in files over time. It helps developers save versions of their code, collaborate with others, and go back to earlier states if needed.
+
+GitHub is a cloud-based platform that hosts Git repositories online. It makes it easy to share code, collaborate with teams, and manage projects remotely.
+
+Key differences:
+- Git = local version control tool
+- GitHub = online hosting and collaboration platform
+
+Why Git is important:
+- Tracks code changes
+- Helps work in teams
+- Makes collaboration easier
+- Prevents losing work
+- Lets you revert mistakes
+
+Basic Git terms:
+
+1. Repository (repo)
+   - A project folder tracked by Git.
+
+2. Commit
+   - A saved version of the project.
+
+3. Branch
+   - A separate line of development.
+
+4. Merge
+   - Combining changes from one branch into another.
+
+5. Clone
+   - Downloading a repository from GitHub to your local computer.
+
+6. Pull
+   - Getting the latest changes from a remote repository.
+
+7. Push
+   - Sending your local commits to GitHub.
+
+8. Remote
+   - The online version of your repository on GitHub.
+
+9. Working Directory
+   - Your current local project folder.
+
+10. Staging Area
+   - Files ready to be committed.
+
+Basic Git commands:
+
+1. git init
+   - Initialize a new Git repository.
+
+2. git status
+   - Check the status of files in the project.
+
+3. git add <file>
+   - Add a file to the staging area.
+
+4. git add .
+   - Add all changed files to the staging area.
+
+5. git commit -m "message"
+   - Save changes with a commit message.
+
+6. git log
+   - View the commit history.
+
+7. git branch
+   - Show all branches in the project.
+
+8. git checkout -b branchName
+   - Create and switch to a new branch.
+
+9. git checkout branchName
+   - Switch to an existing branch.
+
+10. git merge branchName
+   - Merge a branch into the current branch.
+
+11. git clone <repo-url>
+   - Clone a repository from GitHub.
+
+12. git pull origin main
+   - Pull the latest changes from the main branch.
+
+13. git push origin main
+   - Push local changes to the GitHub main branch.
+
+14. git remote -v
+   - View remote repository URLs.
+
+GitHub workflow:
+
+1. Create a repository on GitHub.
+2. Clone it to your local computer.
+3. Make changes in your project files.
+4. Check git status.
+5. Add files using git add .
+6. Commit changes with git commit -m "message"
+7. Push to GitHub with git push origin main
+8. Share the repository with others or collaborate on branches.
+
+Common GitHub features:
+
+- Repositories
+- Pull requests
+- Issues
+- Branches
+- Forks
+- Actions
+- README files
+
+Important notes:
+- Git tracks your code history locally.
+- GitHub stores your repository online and allows collaboration.
+- Always commit meaningful messages.
+- Use branches when working on features or fixes.
+- Pull before pushing to avoid conflicts.
+
+Example workflow:
+
+git init
+git status
+git add .
+git commit -m "Initial project setup"
+git branch -M main
+git remote add origin https://github.com/yourusername/repo.git
+git push -u origin main
+
+This is a common workflow for starting a project and uploading it to GitHub.
+
+Summary:
+Git helps developers track and manage project versions, while GitHub provides an online platform to host, share, and collaborate on those projects. Together, they are essential tools in modern software development.
