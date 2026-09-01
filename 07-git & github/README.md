@@ -1,5 +1,7 @@
 <div align="center">
 
+  <h1>Git & GitHub Learning</h1>
+
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22C55E,50:10B981,100:15803D&height=180&section=header&text=Git%20%26%20GitHub%20Learning&fontSize=48&fontColor=FFFFFF&fontAlignY=35&desc=Version%20Control%20%26%20Collaboration%20for%20Developers&descAlignY=55&descSize=18&animation=scaleIn" alt="Git and GitHub Banner" />
 
   <img src="https://img.shields.io/badge/Git-Version%20Control-brightgreen?style=for-the-badge" alt="Git" />
@@ -12,6 +14,8 @@
   <blockquote>
     <p><i>"Git helps you track changes; GitHub helps you share and collaborate with the world."</i></p>
   </blockquote>
+
+  <p><strong>Author:</strong> Sigma Web Development Batch</p>
 
 </div>
 
