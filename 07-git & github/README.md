@@ -1,9 +1,9 @@
 <div align="center">
 
-  <h1>Git & GitHub Learning</h1>
-
+  <!-- Animated Header Banner -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22C55E,50:10B981,100:15803D&height=180&section=header&text=Git%20%26%20GitHub%20Learning&fontSize=48&fontColor=FFFFFF&fontAlignY=35&desc=Version%20Control%20%26%20Collaboration%20for%20Developers&descAlignY=55&descSize=18&animation=scaleIn" alt="Git and GitHub Banner" />
 
+  <!-- Git/GitHub Badges -->
   <img src="https://img.shields.io/badge/Git-Version%20Control-brightgreen?style=for-the-badge" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-Remote%20Collaboration-black?style=for-the-badge" alt="GitHub" />
   <img src="https://img.shields.io/badge/Topics-Branches%20%7C%20Commits%20%7C%20Pulls-blue?style=for-the-badge" alt="Topics" />
@@ -14,8 +14,6 @@
   <blockquote>
     <p><i>"Git helps you track changes; GitHub helps you share and collaborate with the world."</i></p>
   </blockquote>
-
-  <p><strong>Author:</strong> Sigma Web Development Batch</p>
 
 </div>
 
@@ -36,6 +34,7 @@
 - [Fixing Mistakes](#fixing-mistakes)
 - [Forking a Repository](#forking-a-repository)
 - [Quick Notes](#quick-notes)
+- [Author](#author)
 
 ---
 
@@ -456,3 +455,41 @@ git merge upstream/main
 ## Summary
 
 Git helps developers track changes and manage versions of their code, while GitHub provides a platform for hosting repositories, collaborating, and sharing projects. Together, they are essential tools in software development.
+
+---
+
+## Author
+
+<div align="center">
+
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/JunaidHassan19">
+          <img src="https://avatars.githubusercontent.com/u/123434178?v=4" width="100" style="border-radius: 50%;" alt="Junaid Hassan"/>
+          <br>
+          <sub><strong>Junaid Hassan</strong></sub>
+        </a>
+        <br>
+        <sub>🌐 Web Developer in Training</sub>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+[![GitHub](https://img.shields.io/badge/GitHub-@JunaidHassan19-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JunaidHassan19)
+
+<sub>⭐ Star this repository if you find it helpful!</sub>
+
+</div>
+
+---
+
+<div align="center">
+
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22C55E,50:10B981,100:15803D&height=100&section=footer" alt="Footer Banner" />
+
+<sub><i>Built with ⚡ and lots of <code>{ }</code></i></sub>
+
+</div>
