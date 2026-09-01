@@ -47,16 +47,30 @@ Basic Git terms:
 10. Staging Area
    - Files ready to be committed.
 
+11. Fork
+   - Your own copy of someone else's GitHub repository.
+
+Configuring Git
+
+Before using Git, configure your identity:
+
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+git config --global --list
+
+This tells Git who is making the commits.
+
 Basic Git commands:
 
 1. git init
-   - Initialize a new Git repository.
+   - Initialize a new Git repository in the current folder.
 
 2. git status
    - Check the status of files in the project.
 
 3. git add <file>
-   - Add a file to the staging area.
+   - Add a specific file to the staging area.
 
 4. git add .
    - Add all changed files to the staging area.
@@ -91,16 +105,211 @@ Basic Git commands:
 14. git remote -v
    - View remote repository URLs.
 
-GitHub workflow:
+Clone command
+
+To download an existing GitHub project on your computer:
+
+git clone https://github.com/username/repository.git
+cd repository
+
+This creates a local copy of the repository.
+
+Status command
+
+Use git status to see:
+- modified files
+- untracked files
+- files staged for commit
+- branch you are currently on
+
+Example:
+
+git status
+
+Add and push commands
+
+To stage files:
+
+git add fileName.html
+git add .
+
+To save changes with a commit message:
+
+git commit -m "Add homepage design"
+
+To upload to GitHub:
+
+git push origin main
+
+Push command
+
+The push command sends your local commits to the remote repository:
+
+git push origin main
+
+If the branch is new, you may use:
+
+git push -u origin main
+
+The -u flag sets the upstream tracking branch for future pushes.
+
+Init command
+
+To start a new Git repository in a folder:
+
+git init
+
+Then add files:
+
+git add .
+git commit -m "Initial commit"
+
+Push local repository to GitHub
+
+If you have a project created locally and want to upload it to GitHub:
+
+git init
+git add .
+git commit -m "Initial project setup"
+git branch -M main
+git remote add origin https://github.com/yourusername/repo.git
+git push -u origin main
+
+This is the standard process for pushing a local repo to a remote GitHub repository.
+
+GitHub workflow
+
+A common development workflow:
 
 1. Create a repository on GitHub.
-2. Clone it to your local computer.
+2. Clone it to your local machine.
 3. Make changes in your project files.
 4. Check git status.
 5. Add files using git add .
-6. Commit changes with git commit -m "message"
-7. Push to GitHub with git push origin main
-8. Share the repository with others or collaborate on branches.
+6. Commit with git commit -m "message"
+7. Pull latest changes before pushing if needed.
+8. Push to GitHub using git push origin main
+9. Open a Pull Request if working with a team.
+
+Example workflow:
+
+git clone https://github.com/username/repository.git
+cd repository
+git status
+git add .
+git commit -m "Update layout"
+git pull origin main
+git push origin main
+
+Git branches
+
+Branches let you work on different features or fixes without affecting the main project.
+
+Common branch commands:
+
+git branch
+
+git checkout -b feature/homepage
+
+or
+
+git switch -c feature/homepage
+
+To switch branches:
+
+git checkout main
+
+git checkout feature/homepage
+
+To delete a branch:
+
+git branch -d feature/homepage
+
+Branching is useful when multiple people work on the same project.
+
+Merging branches
+
+When a feature is complete, merge it back into the main branch:
+
+git checkout main
+git merge feature/homepage
+
+This combines the changes from the feature branch into the main branch.
+
+If there are no conflicting edits, Git merges automatically.
+
+Pull command
+
+The pull command gets the newest changes from the remote repository:
+
+git pull origin main
+
+It is useful before pushing to avoid conflicts and keep your local repo updated.
+
+Merge conflicts
+
+A merge conflict happens when two people edit the same line in the same file, or when Git cannot decide which version to keep.
+
+Example:
+
+git pull origin main
+
+If conflicts appear, Git marks the problem areas in the file.
+
+You must resolve them manually by editing the file and deciding the final correct code.
+
+After fixing the conflict:
+
+git add <file>
+git commit -m "Resolve merge conflict"
+
+Fixing mistakes
+
+Git provides commands to undo mistakes:
+
+1. Undo a change in a file:
+   git restore <file>
+
+2. Discard all working tree changes:
+   git restore .
+
+3. Undo the last commit but keep changes:
+   git reset --soft HEAD~1
+
+4. Undo the last commit and remove changes:
+   git reset --hard HEAD~1
+
+5. Check previous version of a file:
+   git log
+   git checkout <commit-id> -- <file>
+
+Always be careful with reset --hard because it permanently removes the changes.
+
+Fork
+
+A fork is a personal copy of someone else's GitHub repository.
+
+Why use a fork?
+- You can make changes without affecting the original project.
+- It is common in open-source development.
+
+How to fork:
+1. Go to the repository on GitHub.
+2. Click Fork.
+3. Clone your fork to your computer.
+
+Example:
+
+git clone https://github.com/yourusername/repository.git
+cd repository
+
+If you want to keep your fork updated with the original repository, add an upstream remote:
+
+git remote add upstream https://github.com/originalowner/repository.git
+git fetch upstream
+git merge upstream/main
+
+This helps you sync your fork with the original project.
 
 Common GitHub features:
 
@@ -118,18 +327,7 @@ Important notes:
 - Always commit meaningful messages.
 - Use branches when working on features or fixes.
 - Pull before pushing to avoid conflicts.
-
-Example workflow:
-
-git init
-git status
-git add .
-git commit -m "Initial project setup"
-git branch -M main
-git remote add origin https://github.com/yourusername/repo.git
-git push -u origin main
-
-This is a common workflow for starting a project and uploading it to GitHub.
+- Use forks when collaborating on other people's projects.
 
 Summary:
 Git helps developers track and manage project versions, while GitHub provides an online platform to host, share, and collaborate on those projects. Together, they are essential tools in modern software development.
