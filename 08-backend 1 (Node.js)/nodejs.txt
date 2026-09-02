@@ -37,6 +37,63 @@ Run it from the terminal:
 
 node app.js
 
+Node.js REPL
+------------
+REPL means Read-Eval-Print Loop. It lets you run JavaScript statements one
+line at a time directly in the terminal.
+
+Start the REPL with:
+
+node
+
+Then try:
+
+> 2 + 3
+5
+> console.log("Hello")
+Hello
+
+Use .help to see REPL commands and .exit to leave the REPL. You can also press
+Ctrl+C twice to exit.
+
+Node.js files
+-------------
+Node.js files normally use the .js extension. Run a file by passing its path
+to the node command:
+
+node fileName.js
+
+The current directory is represented by a dot. For example:
+
+node ./scripts/app.js
+
+Use ./ when importing a local file. Without ./, Node.js searches for a built-in
+module or an installed package.
+
+The process object
+------------------
+process is a built-in global object that provides information about and control
+over the current Node.js program.
+
+Useful properties and methods:
+- process.argv: command-line arguments
+- process.env: environment variables
+- process.cwd(): current working directory
+- process.exit(): stops the program
+
+Example:
+
+console.log(process.argv);
+console.log(process.cwd());
+console.log(process.env.NODE_ENV);
+
+Run a file with an argument:
+
+node app.js hello
+
+The value hello is available in process.argv. The first two values are usually
+the Node.js executable path and the JavaScript file path.
+
 Node.js modules
 ---------------
 A module is a reusable piece of code. Node.js provides built-in modules such
@@ -58,14 +115,142 @@ Modern projects can also use ES module syntax:
 
 import os from "os";
 
+Importing a module
+------------------
+CommonJS is the default module system in many Node.js projects. Import a
+built-in module or an installed package with require:
+
+const path = require("path");
+const figlet = require("figlet");
+
+Import a local module by using its relative path:
+
+const math = require("./math");
+
+The .js extension can usually be omitted. A path beginning with ./ or ../ is
+treated as a local module path.
+
+ES modules use import and export. Add this to package.json:
+
+"type": "module"
+
+Then import a module like this:
+
+import path from "path";
+import { sum } from "./math.js";
+
+Do not mix CommonJS and ES module syntax in the same file unless the project is
+specifically configured to support both systems.
+
+Exporting from files and directories
+------------------------------------
+Use module.exports to make values available to another CommonJS file.
+
+In math.js:
+
+const sum = (a, b) => a + b;
+module.exports = { sum: sum };
+
+In another file:
+
+const math = require("./math");
+console.log(math.sum(2, 3));
+
+A directory can act as a module. Put an index.js file inside the directory and
+export its public values from that file.
+
+fruits/apple.js:
+
+module.exports = { name: "apple" };
+
+fruits/banana.js:
+
+module.exports = { name: "banana" };
+
+fruits/index.js:
+
+const apple = require("./apple");
+const banana = require("./banana");
+module.exports = [apple, banana];
+
+Now a file outside the directory can load the directory through index.js:
+
+const fruits = require("./fruits");
+console.log(fruits);
+
 npm and package.json
 -------------------
+npm stands for Node Package Manager. It is installed with Node.js and is used
+to find, install, update, remove, and manage JavaScript packages.
+
 Create a new Node.js project with:
 
 npm init -y
 
-This creates a package.json file. It stores project information, scripts, and
-dependencies.
+This creates a package.json file. It stores the project name, version,
+description, entry file, scripts, and dependencies.
+
+Important package.json fields:
+- name and version: identify the project
+- main: the main entry file
+- scripts: commands that can be run with npm run
+- dependencies: packages required by the application
+- devDependencies: packages required only during development
+
+Example:
+
+{
+	"name": "my-project",
+	"version": "1.0.0",
+	"main": "app.js",
+	"scripts": { "start": "node app.js" },
+	"dependencies": {}
+}
+
+Installing packages
+-------------------
+Install a package in the current project with:
+
+npm install package-name
+
+For example:
+
+npm install figlet
+
+The package is placed in node_modules, and its name and version are added to
+package.json. package-lock.json records the exact dependency versions so that
+the project can be installed consistently on another machine.
+
+Install a development-only package with:
+
+npm install package-name --save-dev
+
+Remove a package with:
+
+npm uninstall package-name
+
+Install all packages listed in package.json with:
+
+npm install
+
+Local and global installation
+-----------------------------
+Local installation is the normal choice for project dependencies:
+
+npm install package-name
+
+The package is available inside that project and is recorded in its
+package.json. Different projects can use different versions.
+
+Global installation makes a command available across the computer:
+
+npm install -g package-name
+
+Use global installation mainly for command-line tools that you run directly,
+not for packages imported by application code. A locally installed package can
+be run through an npm script or with npx:
+
+npx package-name
 
 Install a package:
 
