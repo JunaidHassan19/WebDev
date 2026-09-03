@@ -1,0 +1,155 @@
+EXPRESS.JS NOTES
+================
+
+What is Express?
+-----------------
+Express.js is a lightweight web framework for Node.js. Node.js provides the
+runtime, while Express gives us convenient tools for creating web servers and
+APIs. It helps us handle HTTP requests, send responses, create routes, and use
+middleware.
+
+Install and start an Express app:
+
+		npm init -y
+		npm install express
+		node index.js
+
+The browser address for a local server is:
+
+		http://localhost:3000
+
+
+Basic server
+------------
+
+		const express = require("express");
+		const app = express();
+		const port = 3000;
+
+		app.get("/", (req, res) => {
+			res.send("Hello from Express!");
+		});
+
+		app.listen(port, () => {
+			console.log(`Server is running on port ${port}`);
+		});
+
+`app.listen()` starts the server and makes it listen for requests. Keep the
+terminal running while opening the URL in a browser.
+
+
+Handling requests and sending responses
+----------------------------------------
+
+Each route callback receives two important objects:
+
+* `req` (request): information sent by the client, such as the URL, method,
+	headers, parameters, and query string.
+* `res` (response): methods used to send data back to the client.
+
+Common response methods:
+
+		res.send("Plain text");
+		res.json({ message: "Success" });
+		res.status(201).send("Created");
+		res.status(404).send("Page not found");
+		res.redirect("/");
+
+The response should normally be sent once. Calling `res.send()` twice for one
+request can cause a "headers already sent" error.
+
+
+HTTP methods and routing
+------------------------
+
+Routing connects an HTTP method and URL path to a function:
+
+		app.get("/about", (req, res) => {
+			res.send("About page");
+		});
+
+		app.post("/users", (req, res) => {
+			res.send("User created");
+		});
+
+		app.put("/users/:id", (req, res) => {
+			res.send("User updated");
+		});
+
+		app.delete("/users/:id", (req, res) => {
+			res.send("User deleted");
+		});
+
+Common methods are `GET` (read), `POST` (create), `PUT` or `PATCH` (update),
+and `DELETE` (remove). Route order matters: Express checks routes in the order
+in which they are registered.
+
+
+Path parameters
+---------------
+
+Path parameters are named values inside the URL path. They are available in
+`req.params`:
+
+		app.get("/users/:id", (req, res) => {
+			const userId = req.params.id;
+			res.send(`Requested user: ${userId}`);
+		});
+
+For `/users/42`, `req.params.id` is `"42"`. Convert it to a number when a
+numeric value is required:
+
+		const userId = Number(req.params.id);
+
+
+Query strings
+-------------
+
+Query strings are optional key-value pairs after `?`. They are available in
+`req.query`:
+
+		app.get("/search", (req, res) => {
+			const term = req.query.term;
+			const page = req.query.page || "1";
+			res.json({ term, page });
+		});
+
+For `/search?term=node&page=2`, the values are `req.query.term` = `"node"`
+and `req.query.page` = `"2"`. Query values arrive as strings, so validate or
+convert them before using them.
+
+
+Middleware
+----------
+
+Middleware runs between receiving a request and sending a response. It must
+call `next()` to continue to the next middleware or route:
+
+		app.use((req, res, next) => {
+			console.log(req.method, req.url);
+			next();
+		});
+
+Useful built-in middleware:
+
+		app.use(express.json());
+		app.use(express.urlencoded({ extended: true }));
+		app.use(express.static("public"));
+
+`express.json()` parses JSON request bodies, and `express.static()` serves
+files from a folder.
+
+
+Important points
+----------------
+
+* Use `http://localhost:3000`, including the protocol and port.
+* Start the app with `node index.js` from the folder containing `index.js`.
+* Keep the terminal process running; stopping it closes the server.
+* If port 3000 is busy, use another port, such as `3001`.
+* A browser request normally uses `GET`; use Postman, curl, or frontend code
+	to test `POST`, `PUT`, and `DELETE` routes.
+* A missing route usually gives a 404 response. "Site can't be reached"
+	usually means the server is not running, crashed, or the port is wrong.
+* In production, validate input, handle errors, protect secrets, and use
+	environment variables for configuration.
