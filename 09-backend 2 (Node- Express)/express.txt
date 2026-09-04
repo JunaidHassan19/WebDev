@@ -1,6 +1,5 @@
 EXPRESS.JS NOTES
 ================
-
 What is Express?
 -----------------
 Express.js is a lightweight web framework for Node.js. Node.js provides the
