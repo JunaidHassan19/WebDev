@@ -21,8 +21,9 @@ app.use((req, res) => {
 });
 */
 
+// app.get is a method that allows you to define a route handler for a specific HTTP GET request. In this case, we are using app.get to define a route handler for the root path ("/"). When a GET request is made to the root path, the callback function will be executed, and it will send a response back to the client with the message "You are on the root path".
 app.get("/", (req, res) => {
-  res.send("You are on the root path");
+  res.send("Hello! You are on the root path");
 });
 
 app.get("/name", (req, res) => {
@@ -38,7 +39,9 @@ app.get("/color", (req, res) => {
 });
 
 app.get("/*splat", (req, res) => {
-  res.send("this path does not exist");
+  res.send(
+    "Hello you entered a wrong path, please check the path and try again",
+  );
 });
 
 app.post("/", (req, res) => {
