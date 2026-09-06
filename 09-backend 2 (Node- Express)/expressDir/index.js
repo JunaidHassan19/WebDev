@@ -38,12 +38,27 @@ app.get("/color", (req, res) => {
   res.send("You are on the color path, and your favorite color is blue");
 });
 
-app.get("/*splat", (req, res) => {
-  res.send(
-    "Hello you entered a wrong path, please check the path and try again",
-  );
-});
+// app.get("/*splat", (req, res) => {
+//   res.send(
+//     "Hello you entered a wrong path, please check the path and try again",
+//   );
+// });
 
 app.post("/", (req, res) => {
   res.send("you send a post request");
+});
+
+app.get("/:username/:id", (req, res) => {
+  let { username, id } = req.params;
+  let code = `<h1>Hello @${username}, your id is ${id}</h1>`;
+  res.send(code);
+});
+
+app.get("/search", (req, res) => {
+  let { q } = req.query;
+  if (!q) {
+    res.send("<h1>You did not provide a search query</h1>");
+  }
+  let code = `<h1>You searched for ${q}</h1>`;
+  res.send(code);
 });
