@@ -11,6 +11,11 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/ig/:username", (req, res) => {
+  let { username } = req.params;
+  res.render("instagram", { username });
+});
+
 app.get("/hello", (req, res) => {
   res.send("Hello World");
 });
