@@ -15,6 +15,11 @@ app.get("/hello", (req, res) => {
   res.send("Hello World");
 });
 
+app.get("/rolldice", (req, res) => {
+  let diceValue = Math.floor(Math.random() * 6) + 1;
+  res.render("rolldice", { diceValue });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
