@@ -11,6 +11,9 @@
   <h1>Dice give values:
     <%= diceValue %>
   </h1>
+  <% if(diceValue===6) { %>
+    <h2>You rolled a six!, Roll again</h2>
+    <% } %>
 </body>
 
 </html>
