@@ -1,0 +1,66 @@
+EJS (Embedded JavaScript)
+
+EJS is a template engine used with Node.js and Express. It allows us to write HTML mixed with JavaScript logic, so we can dynamically generate web pages.
+
+Why use EJS?
+- It is simple and easy to learn.
+- It helps render dynamic content in the browser.
+- It works well with Express.
+- It allows HTML and JavaScript to be combined in one file.
+
+Basic concepts:
+1. Install Express and EJS
+   npm install express ejs
+
+2. Set the view engine in Express
+   app.set("view engine", "ejs");
+
+3. Create a views folder
+   app.set("views", path.join(__dirname, "views"));
+
+4. Render an EJS file
+   res.render("home");
+
+Example:
+```ejs
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+</head>
+<body>
+  <h1>Welcome, <%= user %>!</h1>
+  <p>5 + 5 = <%= 5 + 5 %></p>
+</body>
+</html>
+```
+
+EJS tags:
+- <%= ... %> : prints values to the page
+- <% ... %> : JavaScript code without printing
+- <%- ... %> : prints unescaped HTML content
+- <%# ... %> : comments
+
+Example with JavaScript loop:
+```ejs
+<ul>
+  <% fruits.forEach((fruit) => { %>
+    <li><%= fruit %></li>
+  <% }) %>
+</ul>
+```
+
+Important points:
+- EJS files usually go in the views folder.
+- We pass data from the server using res.render("pageName", { key: value });
+- It is commonly used to create dynamic pages like dashboards, forms, and user profiles.
+
+Example:
+```js
+app.get("/", (req, res) => {
+  res.render("home", { user: "John" });
+});
+```
+
+Summary:
+EJS is a powerful template engine that helps developers build dynamic web pages with JavaScript inside HTML. It is an essential part of backend development with Express.
