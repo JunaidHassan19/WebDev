@@ -61,5 +61,6 @@ app.get("/", (req, res) => {
   res.render("home", { user: "John" });
 });
 ```
+
 Summary:
 EJS is a powerful template engine that helps developers build dynamic web pages with JavaScript inside HTML. It is an essential part of backend development with Express.
