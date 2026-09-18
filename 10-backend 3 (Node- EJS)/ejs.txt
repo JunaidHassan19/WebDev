@@ -1,4 +1,5 @@
 EJS (Embedded JavaScript)
+
 EJS is a template engine used with Node.js and Express. It allows us to write HTML mixed with JavaScript logic, so we can dynamically generate web pages.
 
 Why use EJS?
