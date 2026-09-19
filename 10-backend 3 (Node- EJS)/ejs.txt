@@ -10,6 +10,7 @@ Why use EJS?
 - It allows HTML and JavaScript to be combined in one file.
 
 Basic concepts:
+
 1. Install Express and EJS
    npm install express ejs
 
