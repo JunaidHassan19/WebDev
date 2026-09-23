@@ -23,6 +23,7 @@ Basic concepts:
    res.render("home");
 
 Example:
+
 ```ejs
 <!DOCTYPE html>
 <html>
