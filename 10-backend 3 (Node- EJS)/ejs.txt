@@ -36,7 +36,6 @@ Example:
 ```
 
 EJS tags:
-
 - <%= ... %> : prints values to the page
 - <% ... %> : JavaScript code without printing
 - <%- ... %> : prints unescaped HTML content
